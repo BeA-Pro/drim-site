@@ -1,0 +1,15 @@
+@import "mixin";
+@import "./variables";
+
+.wrap {
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+}
+
+.container {
+  margin : auto;
+  height: 100%;
+  width: 80%;
+  background-color: black;
+}
