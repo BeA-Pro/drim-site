@@ -13,7 +13,11 @@ function App() {
     <div className="wrap">
       <Header />
       <div className="container">
+
+
         <Main />
+
+
       </div>
       <Footer />
     </div>

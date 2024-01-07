@@ -1,0 +1,7 @@
+@import "./variables";
+@import "mixin";
+
+.footer_wrap{
+  height: #{$footer-size};
+  background-color: green;
+}

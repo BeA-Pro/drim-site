@@ -2,14 +2,14 @@
 @import "./variables";
 
 .wrap {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100%;
   background-color: aqua;
+  position:relative;
 }
 
 .container {
   margin : auto;
-  height: 100%;
   width: 80%;
+  height: 1000px;
   background-color: black;
 }
