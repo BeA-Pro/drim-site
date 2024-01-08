@@ -3,7 +3,7 @@
 
 .header_wrap{
   top:0;
-  height: 100px;
+  height: #{$header-size};
   width: auto;
   background-color: wheat;
 }
