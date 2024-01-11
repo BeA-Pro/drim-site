@@ -9,6 +9,15 @@ function Header() {
 
   return (
     <div className="header_wrap">
+      <div className="Logo">로고</div>
+      <div className="menu">
+        <ul>
+          <li>회사 소개</li>
+          <li>사업 소개</li>
+          <li>부동산 보고서</li>
+          <li>시공 문의</li>
+        </ul>
+      </div>
     </div>
   )
 

@@ -3,10 +3,10 @@
 
 .wrap {
   min-height: 100%;
-  background-color: aqua;
+  background-color: $wrap-color;
 }
 
 .container {
   min-height: calc(100vh - #{$header-size} - #{$footer-size});
-  background-color: black;
+  background-color: $container-color;
 }
