@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <div className="header_wrap">
-      <div className="Logo">로고</div>
+      <div className="header_Logo">로고</div>
       <div className="menu">
         <ul>
           <li>회사 소개</li>

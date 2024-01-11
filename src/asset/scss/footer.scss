@@ -4,4 +4,22 @@
 .footer_wrap{
   height: #{$footer-size};
   background-color: $footer-color;
+  position: relative;
+  padding: 0 30px;
+}
+
+.footer_info {
+  display : flex;
+}
+
+.footer_Logo{
+  font-size : 30px;
+}
+
+.footer_copyright{
+    li {
+      a {
+        color:#999;
+      }
+    }
 }
