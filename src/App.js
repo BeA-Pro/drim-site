@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // scss
 import "./asset/scss/common.scss"
 
@@ -13,11 +14,9 @@ function App() {
     <div className="wrap">
       <Header />
       <div className="container">
+        <Switch>
 
-
-        <Main />
-
-
+        </Switch>
       </div>
       <Footer />
     </div>
