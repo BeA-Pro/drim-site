@@ -7,6 +7,7 @@
 }
 
 .container {
+  padding-top: $header-size;
   min-height: calc(100vh - #{$header-size} - #{$footer-size});
   background-color: $container-color;
 }
