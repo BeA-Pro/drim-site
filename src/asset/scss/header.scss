@@ -4,44 +4,59 @@
 .header_wrap {
   position: fixed;
   width: 100%;
-  box-sizing: border-box;
-  padding: 0 30px;
   background-color: $header-color;
+  z-index: 1;
 
-  .menu-top{
-    display: flex;
-    width: 100%;
-    height: $header-size;
-    justify-content: space-between;
-    align-items: center;
+  .header-top{
+    display : flex;
+    width : 100%;
+    height : $header-size;
+    border-bottom : 1px;
+    justify-content : space-between;
+    align-items : center;
+    border-bottom : 2px solid black;
+    box-sizing : border-box;
+    padding : 0 60px;
 
-    ul{
-      display: flex;
-      li button{
-        height: $header-size;
-        width: 150px;
+    ul {
+      display : flex;
+      li button {
+        height : $header-size;
+        width : 150px;
+        text-align: center;
       }
     }
   }
 
-  .menu-bottom{
-    
+  .header-bottom{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 100%;
+    height:0;
+    box-sizing: border-box;
+    padding: 0 60px;
+    overflow: hidden;
+    
+    transition-duration: 0.75s;
 
+    .menu-details {
+      display: flex;
       ul{
-        overflow: hidden;
-        height: 0px;
-        transition-duration: 1s;
         width: 150px;
-        text-align:center
-        
-      }
-  
-      ul.hovered{
-        height: 100px;
+        text-align:center;
+
+        li {
+          margin : 10px 0 ;
+        }
+        li:hover{
+            color : blue;
+        }
       }
     }
-    
+  }
+
+  .header-bottom.hovered{
+    height: 150px;
+  }
 }
