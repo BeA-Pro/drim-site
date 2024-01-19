@@ -73,17 +73,4 @@ function Slide() {
   )
 
 }
-
-// <div className='slide-button-list'>
-//   <button className='slide-button' />
-//   <button className='slide-button' />
-//   <button className='slide-button' />
-// </div>
-
-// <div className='slide-button-list'>
-//         {slideButtons.map((index) => {
-//           <button className={`'slide-button' ${index === currentIdx ? "active" : ""}`} />
-//         })
-//         }
-//       </div>
 export default Slide;
