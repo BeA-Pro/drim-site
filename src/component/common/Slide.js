@@ -27,11 +27,6 @@ function Slide() {
   const slideButtons = [0, 1, 2];
 
   const [currentIdx, setCurrentIdx] = useState(0);
-
-  const preSlide = () => {
-    setCurrentIdx((preIdx) => (preIdx - 1 + slideImages.length) % slideImages.length);
-  };
-
   const nextSlide = () => {
     setCurrentIdx((preIdx) => (preIdx + 1) % slideImages.length);
   }
@@ -45,7 +40,7 @@ function Slide() {
       nextSlide();
     }, 3000);
 
-    return () => clearInterval(interval); // 클리어 필요
+    return () => clearInterval(interval);
   }, [currentIdx]);
 
 
