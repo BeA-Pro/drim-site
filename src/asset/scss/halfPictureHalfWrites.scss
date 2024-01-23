@@ -1,0 +1,15 @@
+.halfPictureHalfWrites-wrap{
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .half-picture{
+    height: 100%;
+    width: 50%;
+  }
+  .half-writes{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+  }
+}
