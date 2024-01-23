@@ -33,7 +33,6 @@ function Main() {
       </section>
     </>
   )
-
 }
 
 export default Main;

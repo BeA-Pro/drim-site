@@ -1,6 +1,6 @@
 .siteActivityComponent{
   background-color: black;
-  width: 300px;
+  width: 400px;
   height: 200px;
   border-radius: 20px;
   box-sizing: border-box;
@@ -12,27 +12,24 @@
     .siteActivityComponent-info{
       flex:1;
 
-      .number-animation {
-        text-align: center;
-        font-size: 24px;
-      }
-      
-      .count {
-        font-size: 36px;
-        color: white; 
-      }
-
       .main-info{
-        font-size:50px;
+        font-size:60px;
         font-weight: bold;
         color: white;
       }
       .main-info-unit{
         color: white;
-        font-size:25px;
+        font-size:30px;
+        font-weight: bold;
+      }
+
+      .main-info-unit-writes{
+        color: white;
+        font-size:15px;
         font-weight: bold;
       }
     }
+    
     .siteActivityComponent-img{
       flex:1;
     }
