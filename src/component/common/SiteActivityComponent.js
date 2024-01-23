@@ -13,17 +13,16 @@ function SiteActivityComponent(props) {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
-  const threshold = 100;
 
   useEffect(() => {
     const handleScroll = () => {
       const element = elementRef.current;
       if (!element) return;
 
-      const elementTop = element.getBoundingClientRect().top;
+      const elementBottom = element.getBoundingClientRect().bottom;
       const windowHeight = window.innerHeight;
 
-      if (elementTop < windowHeight - threshold) {
+      if (elementBottom < windowHeight) {
         setIsVisible(true);
       }
     };
@@ -33,15 +32,15 @@ function SiteActivityComponent(props) {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [threshold]);
+  }, []);
 
 
   useEffect(() => {
     if (isVisible) {
       const start = performance.now(); // 현재 시간을 기록
-      const duration = 1500; // 애니메이션 지속 시간 (1초)
+      const duration = 3000; // 애니메이션 지속 시간 (1.5초)
 
-      const updateCount = (timestamp) => {
+      const updateCount = (timestamp) => { // timestamp : requestAnimationFrame 시작시간
         const elapsed = timestamp - start;
         const progress = Math.min(elapsed / duration, 1); // 진행률을 0과 1 사이로 유지
 
@@ -60,16 +59,16 @@ function SiteActivityComponent(props) {
 
     }
 
-  }, [props.count, isVisible]);
+  }, [isVisible]);
 
   return (
-    <div className="siteActivityComponent">
+    <div className="siteActivityComponent" ref={elementRef} >
       <div className="siteActivityComponent-inner">
         <div className="siteActivityComponent-info">
           <div className="main-info">{count}</div>
-          {props.id === "projects" && <div ref={elementRef} className="main-info-unit">Projects</div>}
-          {props.id === "totalTurnover" && <div ref={elementRef} className="main-info-unit">Total Turnover</div>}
-          {props.id === "career" && <div ref={elementRef} className="main-info-unit">Career</div>}
+          {props.id === "projects" && <div className="main-info-unit">Projects</div>}
+          {props.id === "totalTurnover" && <div className="main-info-unit">Total Turnover</div>}
+          {props.id === "career" && <div className="main-info-unit">Career</div>}
         </div>
         {props.id === "projects" && <HomeWorkIcon sx={{ fontSize: 50, color: "white" }} />}
         {props.id === "totalTurnover" && <MoneyIcon sx={{ fontSize: 50, color: "white" }} />}
