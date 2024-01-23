@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "../../asset/scss/header.scss";
 
 //images
-import Logo from "../../asset/images/Logo.png";
+import Logo from "../../asset/icons/drim-logo.svg";
 
 function Header() {
 
@@ -21,7 +21,7 @@ function Header() {
   return (
     <div className="header_wrap">
       <div className="header-top">
-        <h1>Logo</h1>
+        <img src={Logo} alt="Logo" className="Logo" />
         <nav className="menu">
           <ul onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>

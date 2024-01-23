@@ -10,6 +10,7 @@ import SiteActivityComponent from "../../component/common/SiteActivityComponent"
 import Works from '../../asset/icons/works.svg';
 import Time from '../../asset/icons/time.svg';
 import People from '../../asset/icons/people.svg';
+import HalfPictureHalfWrites from "../../component/common/HalfPictureHalfWrites";
 
 
 
@@ -25,7 +26,9 @@ function Main() {
           <SiteActivityComponent id="totalTurnover" count={23} />
           <SiteActivityComponent id="career" count={34} />
         </div>
-
+      </section>
+      <section className="third-section">
+        <HalfPictureHalfWrites />
       </section>
     </>
   )

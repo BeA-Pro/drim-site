@@ -2,7 +2,8 @@
 .second-section{
   height: 50vh;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 0 30px;
+  margin:30px 0;
 
   .second-section-title{
     font-size:40px;
@@ -15,4 +16,9 @@
     box-sizing: border-box;
     padding-top:50px;
   }
+}
+
+.third-section{
+  margin:30px 0;
+  height: 70vh;
 }
