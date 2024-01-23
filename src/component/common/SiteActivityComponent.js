@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import StarIcon from '@mui/icons-material/Star';
 import "../../asset/scss/siteActivityComponent.scss";
 
 import MoneyIcon from '@mui/icons-material/Money';

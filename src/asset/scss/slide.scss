@@ -18,21 +18,22 @@
   .slide-button-list{
     display: flex;
     justify-content: space-evenly;
-    top:85%;
-    left:80%;
+    top:90%;
+    left:85%;
     position: absolute;
-    width: 250px;
-    height: 50px;
+    width: 180px;
+    height: 30px;
   
   
     .slide-button{
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
       background-color: transparent;
       border-width: 3px;      /* 테두리 굵기 */
       border-style: solid;    /* 테두리 스타일: 실선 */
-      border-color: #000;     /* 테두리 색상: 검정 */
+      border-color: black;     /* 테두리 색상: 검정 */
+      opacity: 80%;
       transition: background-color 0.8s ease-in-out;
     }
 
