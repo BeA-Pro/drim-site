@@ -3,24 +3,37 @@
 
 .footer_wrap{
   height: #{$footer-size};
+  width: 100%;
   background-color: $footer-color;
   box-sizing: border-box;
-  position: relative;
-  padding: 1px 20px;
-}
+  padding: 0 30px;
 
-.footer_info {
-  display : flex;
-}
+  display: flex;
+  align-items: center; /* Center the content vertically */
 
-.footer_Logo{
-  font-size : 30px;
-}
 
-.footer_copyright{
-    li {
-      a {
-        color:#999;
-      }
+  .footer-inner{
+    .Logo{
+      height:50px;
+      margin-bottom:10px;
     }
+    .footer_info {
+      display : flex;
+    }
+    
+    .footer_Logo{
+      font-size : 30px;
+    }
+    
+    .footer_copyright{
+        li {
+          a {
+            color:#999;
+          }
+        }
+    }
+  }
+
+  
 }
+
