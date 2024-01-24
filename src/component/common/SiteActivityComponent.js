@@ -58,7 +58,7 @@ function SiteActivityComponent(props) {
 
     }
 
-  }, [isVisible]);
+  }, [isVisible, props.count]);
 
   return (
     <div className="siteActivityComponent" ref={elementRef} >

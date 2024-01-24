@@ -9,7 +9,7 @@ function HalfPictureHalfWrites() {
 
   return (
     <div className="halfPictureHalfWrites-wrap">
-      <img className="half-picture" src={half_image} />
+      <img className="half-picture" src={half_image} alt="info" />
       <div className="half-writes">
       </div>
     </div>

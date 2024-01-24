@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // scss
 import "./asset/scss/common.scss"
 
