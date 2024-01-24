@@ -27,15 +27,17 @@ function Slide() {
   const slideButtons = [0, 1, 2];
 
   const [currentIdx, setCurrentIdx] = useState(0);
-  const nextSlide = () => {
-    setCurrentIdx((preIdx) => (preIdx + 1) % slideImages.length);
-  }
+
 
   const changeCurSlide = (clickIndex) => {
     setCurrentIdx((preIdx) => (clickIndex));
   }
 
   useEffect(() => {
+    const nextSlide = () => {
+      setCurrentIdx((preIdx) => (preIdx + 1) % slideImages.length);
+    }
+
     const interval = setInterval(() => {
       nextSlide();
     }, 3000);
