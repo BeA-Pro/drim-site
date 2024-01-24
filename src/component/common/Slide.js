@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 // scss
 import "../../asset/scss/slide.scss"
@@ -28,22 +28,21 @@ function Slide() {
 
   const [currentIdx, setCurrentIdx] = useState(0);
 
+  const nextSlide = useCallback(() => {
+    setCurrentIdx((preIdx) => (preIdx + 1) % slideImages.length);
+  }, [slideImages.length]);
 
   const changeCurSlide = (clickIndex) => {
     setCurrentIdx((preIdx) => (clickIndex));
   }
 
   useEffect(() => {
-    const nextSlide = () => {
-      setCurrentIdx((preIdx) => (preIdx + 1) % slideImages.length);
-    }
-
     const interval = setInterval(() => {
       nextSlide();
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [currentIdx]);
+  }, [currentIdx, nextSlide]);
 
 
   return (
