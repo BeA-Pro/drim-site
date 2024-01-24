@@ -15,7 +15,7 @@ jobs:                                       # Job 설정
         run: npm install
       
       - name: Cache node modules            # node modules 캐싱
-        uses: actions/cach@v1
+        uses: actions/cache@v1
         with:
           path: node_modules
           key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
