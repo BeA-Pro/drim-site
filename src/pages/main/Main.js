@@ -8,6 +8,7 @@ import SiteActivityComponent from "../../component/common/SiteActivityComponent"
 
 // icons
 import HalfPictureHalfWrites from "../../component/common/HalfPictureHalfWrites";
+import WritesInfo from "../../component/common/WritesInfo";
 
 
 
@@ -30,6 +31,10 @@ function Main() {
       </section>
       <section className="third-section">
         <HalfPictureHalfWrites />
+      </section>
+
+      <section className="fourth-section">
+        <WritesInfo />
       </section>
     </>
   )
