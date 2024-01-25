@@ -69,9 +69,9 @@ function SiteActivityComponent(props) {
           {props.id === "totalTurnover" && <div className="main-info-unit">Total Turnover</div>}
           {props.id === "career" && <div className="main-info-unit">Career</div>}
 
-          {props.id === "projects" && <div className="main-info-unit-writes">Write some worlds</div>}
-          {props.id === "totalTurnover" && <div className="main-info-unit-writes">Write some worlds</div>}
-          {props.id === "career" && <div className="main-info-unit-writes">Write some worlds</div>}
+          {props.id === "projects" && <div className="main-info-unit-writes">Write some words</div>}
+          {props.id === "totalTurnover" && <div className="main-info-unit-writes">Write some words</div>}
+          {props.id === "career" && <div className="main-info-unit-writes">Write some words</div>}
         </div>
         {props.id === "projects" && <HomeWorkIcon sx={{ fontSize: 70, color: "white" }} />}
         {props.id === "totalTurnover" && <MoneyIcon sx={{ fontSize: 70, color: "white" }} />}
