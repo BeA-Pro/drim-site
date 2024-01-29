@@ -58,11 +58,14 @@ function Slide() {
 
       <div className='slide-button-list'>
         {slideButtons.map((index) => (
-          <button
-            key={index}
-            className={`slide-button ${index === currentIdx ? "active" : ""}`}
+          <div
+            className={`slide-button`}
             onClick={() => changeCurSlide(index)}
-          />
+          >
+            <div className={`left ${index === currentIdx ? "active" : ""}`} />
+            <div className={`center ${index === currentIdx ? "active" : ""}`} />
+            <div className={`right ${index === currentIdx ? "active" : ""}`} />
+          </div>
         ))}
       </div>
     </div >
