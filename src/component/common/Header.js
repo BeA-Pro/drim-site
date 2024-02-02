@@ -7,20 +7,29 @@ import Logo from "../../asset/icons/drim-logo.svg";
 
 function Header() {
 
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isHeaderHover, setIsHeaderHover] = useState(false);
+  const [isBottomHover, setIsBottomHover] = useState(false);
 
   const handleMouseEnter = () => {
-    setMenuOpen(true);
+    setIsHeaderHover(true);
+    setIsBottomHover(true);
   };
 
   const handleMouseLeave = () => {
-    setMenuOpen(false);
+    setTimeout(() => {
+      if (!setIsBottomHover) {
+        setIsHeaderHover(false)
+      }
+    }, 750);
+    setIsBottomHover(false);
   };
+
+
 
 
   return (
     <div className="header-wrap">
-      <div className="header-top">
+      <div className={`header-top ${isHeaderHover ? 'hovered' : ''}`}>
         <img src={Logo} alt="Logo" className="Logo" />
         <nav className="menu">
           <ul onMouseEnter={handleMouseEnter}
@@ -41,7 +50,7 @@ function Header() {
         </nav>
       </div>
 
-      <div className={`header-bottom ${isMenuOpen ? 'hovered' : ''}`}
+      <div className={`header-bottom ${isBottomHover ? 'hovered' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

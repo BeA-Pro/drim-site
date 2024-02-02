@@ -7,17 +7,21 @@
     width: 100%;
     background-color: $header-color;
     z-index: 2;
+    box-shadow: 0 1px 7px #555;
   
     .header-top{
       display : flex;
       width : 100%;
       height : $header-size;
-      border-bottom : 1px;
       justify-content : space-between;
       align-items : center;
   
       box-sizing : border-box;
       padding : 0 60px;
+
+      &.hovered{
+        border-bottom : 0.75px solid #999;
+      }
   
       .Logo{
         height: 50px;
@@ -29,6 +33,8 @@
           height : $header-size;
           width : 150px;
           text-align: center;
+          font-weight: bold;
+          font-size:18px;
         }
       }
     }
@@ -42,7 +48,8 @@
       box-sizing: border-box;
       padding: 0 60px;
       overflow: hidden;
-      
+
+
       transition-duration: 0.75s;
   
       .menu-details {
@@ -62,7 +69,6 @@
     }
   
     .header-bottom.hovered{
-      border-top : 0.75px solid #999;
       height: 150px;
     }
   }
