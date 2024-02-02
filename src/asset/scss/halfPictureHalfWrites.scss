@@ -1,44 +1,47 @@
-.halfPictureHalfWrites-wrap{
-  display: flex;
-  height: 100%;
-  width: 100%;
+@import "mixin";
 
-  .half-picture{
+@include desktop{
+  .halfPictureHalfWrites-wrap{
+    display: flex;
     height: 100%;
-    width: 50%;
-  }
-  .half-writes{
-    height: 100%;
-    width: 50%;
-    background-color: black;
-    box-sizing: border-box;
-    padding:50px;
-
-    .half-writes-title{
-      width: 80%;
-      font-size: 30px;
-      font-weight: bold;
-      color: white;
-      margin:50px 0 20px 0;
+    width: 100%;
+  
+    .half-picture{
+      height: 100%;
+      width: 50%;
+      object-fit: cover;
+      object-position: top left;
     }
-
-    .half-writes-detail{
-      width: 80%;
-      color: white;
-      margin-bottom: 40px;
+    .half-writes{
+      background-color: black;
+      box-sizing: border-box;
+      padding:50px;
+  
+      .half-writes-title{
+        width: 80%;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin:50px 0 20px 0;
+      }
+  
+      .half-writes-detail{
+        width: 80%;
+        color: white;
+        margin-bottom: 40px;
+      }
+  
+      .half-writes-button{
+        padding:10px;
+        border-radius: 10px;
+        border : 0.75px solid white;
+        color: white;
+      }
+  
+      .half-writes-button:hover{
+        color: black;
+        background-color:  #E3BA19
+      }
     }
-
-    .half-writes-button{
-      padding:10px;
-      border-radius: 10px;
-      border : 0.75px solid white;
-      color: white;
-    }
-
-    .half-writes-button:hover{
-      color: black;
-      background-color:  #E3BA19
-    }
-
   }
 }

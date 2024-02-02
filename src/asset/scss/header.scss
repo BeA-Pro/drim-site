@@ -1,67 +1,70 @@
 @import "./variables";
 @import "mixin";
 
-.header_wrap {
-  position: fixed;
-  width: 100%;
-  background-color: $header-color;
-  z-index: 1;
-
-  .header-top{
-    display : flex;
-    width : 100%;
-    height : $header-size;
-    border-bottom : 1px;
-    justify-content : space-between;
-    align-items : center;
-
-    box-sizing : border-box;
-    padding : 0 60px;
-
-    .Logo{
-      height: 50px;
-    }
-
-    ul {
-      display : flex;
-      li button {
-        height : $header-size;
-        width : 150px;
-        text-align: center;
-      }
-    }
-  }
-
-  .header-bottom{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+@include desktop{
+  .header-wrap {
+    position: fixed;
     width: 100%;
-    height:0;
-    box-sizing: border-box;
-    padding: 0 60px;
-    overflow: hidden;
-    
-    transition-duration: 0.75s;
-
-    .menu-details {
-      display: flex;
-      ul{
-        width: 150px;
-        text-align:center;
-
-        li {
-          margin : 10px 0 ;
-        }
-        li:hover{
-            color : blue;
+    background-color: $header-color;
+    z-index: 2;
+  
+    .header-top{
+      display : flex;
+      width : 100%;
+      height : $header-size;
+      border-bottom : 1px;
+      justify-content : space-between;
+      align-items : center;
+  
+      box-sizing : border-box;
+      padding : 0 60px;
+  
+      .Logo{
+        height: 50px;
+      }
+  
+      ul {
+        display : flex;
+        li button {
+          height : $header-size;
+          width : 150px;
+          text-align: center;
         }
       }
     }
-  }
-
-  .header-bottom.hovered{
-    border-top : 0.75px solid #999;
-    height: 150px;
+  
+    .header-bottom{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height:0;
+      box-sizing: border-box;
+      padding: 0 60px;
+      overflow: hidden;
+      
+      transition-duration: 0.75s;
+  
+      .menu-details {
+        display: flex;
+        ul{
+          width: 150px;
+          text-align:center;
+  
+          li {
+            margin : 10px 0 ;
+          }
+          li:hover{
+              color : blue;
+          }
+        }
+      }
+    }
+  
+    .header-bottom.hovered{
+      border-top : 0.75px solid #999;
+      height: 150px;
+    }
   }
 }
+

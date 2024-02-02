@@ -19,7 +19,7 @@ function Header() {
 
 
   return (
-    <div className="header_wrap">
+    <div className="header-wrap">
       <div className="header-top">
         <img src={Logo} alt="Logo" className="Logo" />
         <nav className="menu">

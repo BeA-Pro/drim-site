@@ -1,35 +1,44 @@
 @import "mixin";
-.second-section{
-  height: auto;
-  width: 100%;
-  box-sizing: border-box;
-  display:flex;
-  align-items: center;
-  padding: 0 30px;
-  margin: 30px 0;
+@include desktop{
 
-  .second-section-wrap{
+  .second-section{
+    height:50vh;
+    min-height: 400px;
     width: 100%;
-    .second-section-title{
-      font-size:40px;
-      font-weight: bold;
-    }
-    .second-section-writes{
-      font-size:20px;
-      font-weight: bold;
-      margin-top:10px;
-    }
-    .siteActivityComponent-wrap{
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      margin-top:30px;
-      box-sizing: border-box;
+    object-fit: cover;
+    object-position: top left;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    padding: 0 30px;
+    margin: 30px 0;
+
+  
+    .second-section-wrap{
+      width: 100%;
+      .second-section-title{
+        font-size:40px;
+        font-weight: bold;
+      }
+      .second-section-writes{
+        font-size:20px;
+        font-weight: bold;
+        margin-top:10px;
+      }
+      .siteActivityComponent-wrap{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top:30px;
+        box-sizing: border-box;
+      }
     }
   }
-}
-
-.third-section{
-  margin:30px 0;
-  height: 60vh;
+  
+  .third-section{
+    min-height: 60vh;
+  }
+  .fourth-section{
+    height: 50vh;
+  }
 }

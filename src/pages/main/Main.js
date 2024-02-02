@@ -11,8 +11,6 @@ import HalfPictureHalfWrites from "../../component/common/HalfPictureHalfWrites"
 import WritesInfo from "../../component/common/WritesInfo";
 
 
-
-
 function Main() {
   return (
     <>
