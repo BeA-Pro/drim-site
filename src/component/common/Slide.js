@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, forwardRef } from 'react';
 
 // scss
 import "../../asset/scss/slide.scss"
@@ -8,7 +8,7 @@ import Main_image1 from '../../asset/images/main_image1.png';
 import Main_image2 from '../../asset/images/main_image2.png';
 import Main_image3 from '../../asset/images/main_image3.png';
 
-function Slide() {
+const Slide = forwardRef((props, ref) => {
   const slideImages = [
     {
       id: 0,
@@ -46,19 +46,20 @@ function Slide() {
 
 
   return (
-    <div className="slide-wrap">
-      {slideImages.map((image, index) => (
+    <div ref={ref} className="slide-wrap">
+      {slideImages.map((image) => (
         <img
-          key={index}
-          className={`main-image ${index === currentIdx ? "active" : ""}`}
+          key={image.id}
+          className={`main-image ${image.id === currentIdx ? "active" : ""}`}
           src={image.img}
-          alt={`slide ${index}`}
+          alt={`slide ${image.id}`}
         />
       ))}
 
       <div className='slide-button-list'>
         {slideButtons.map((index) => (
           <div
+            key={index}
             className={`slide-button`}
             onClick={() => changeCurSlide(index)}
           >
@@ -68,8 +69,7 @@ function Slide() {
           </div>
         ))}
       </div>
-    </div >
-  )
-
-}
+    </div>
+  );
+});
 export default Slide;

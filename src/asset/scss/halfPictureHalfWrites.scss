@@ -7,15 +7,16 @@
     width: 100%;
   
     .half-picture{
-      height: 100%;
       width: 50%;
       object-fit: cover;
       object-position: top left;
     }
     .half-writes{
+      display: block;
       background-color: black;
       box-sizing: border-box;
       padding:50px;
+      width: 50%;
   
       .half-writes-title{
         width: 80%;

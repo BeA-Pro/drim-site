@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 // scss
 import "../../asset/scss/main.scss";
 
@@ -12,10 +12,34 @@ import WritesInfo from "../../component/common/WritesInfo";
 
 
 function Main() {
+  const element1 = useRef(null);
+  const element2 = useRef(null);
+  const element3 = useRef(null);
+  const element4 = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    if (elementRef.current !== null) {
+      const windowHeight = window.innerHeight;
+      const elementHeight = elementRef.current.getBoundingClientRect().height;
+      const elementOffsetTop = elementRef.current.offsetTop;
+      const scrollPosition = elementOffsetTop - (windowHeight + 100) / 2 + (elementHeight / 2);
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <>
-      <Slide />
-      <section className="second-section">
+      <div className="scrollButtons-wrap">
+        <div className="scrollButtons-button" onClick={() => scrollToSection(element1)} />
+        <div className="scrollButtons-button" onClick={() => scrollToSection(element2)} />
+        <div className="scrollButtons-button" onClick={() => scrollToSection(element3)} />
+        <div className="scrollButtons-button" onClick={() => scrollToSection(element4)} />
+      </div>
+      <Slide ref={element1} />
+      <section className="second-section" ref={element2}>
         <div className="second-section-wrap">
           <div className="second-section-title">About us</div>
           <div className="second-section-writes">Helping our customers create a better world</div>
@@ -27,11 +51,11 @@ function Main() {
         </div>
 
       </section>
-      <section className="third-section">
+      <section className="third-section" ref={element3}>
         <HalfPictureHalfWrites />
       </section>
 
-      <section className="fourth-section">
+      <section className="fourth-section" ref={element4}>
         <WritesInfo />
       </section>
     </>

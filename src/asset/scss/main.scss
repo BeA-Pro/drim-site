@@ -1,8 +1,25 @@
 @import "mixin";
 @include desktop{
 
+  .scrollButtons-wrap{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: calc(50vh - 75px);
+    right: 40px;
+    height: 150px;
+    z-index: 9999;
+  
+    .scrollButtons-button{
+      height: 10px;
+      width: 10px;
+      background-color: orange;
+    }
+  }
+
   .second-section{
-    height:50vh;
+    height:60vh;
     min-height: 400px;
     width: 100%;
     object-fit: cover;
@@ -11,7 +28,6 @@
     display:flex;
     align-items: center;
     padding: 0 30px;
-    margin: 30px 0;
 
   
     .second-section-wrap{
@@ -23,13 +39,13 @@
       .second-section-writes{
         font-size:20px;
         font-weight: bold;
-        margin-top:10px;
+        // margin-top:10px;
       }
       .siteActivityComponent-wrap{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-top:30px;
+        // margin-top:30px;
         box-sizing: border-box;
       }
     }
