@@ -19,31 +19,6 @@ function Main() {
   const [isFocus, setIsFocus] = useState([true, false, false, false]);
   const [curScroll, setCurScroll] = useState(0);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const windowHeight = window.innerHeight;
-  //     const element2Bottom = element2.current.getBoundingClientRect().bottom;
-  //     const element3Bottom = element3.current.getBoundingClientRect().bottom;
-  //     const element4Bottom = element4.current.getBoundingClientRect().bottom;
-  //     const scrollPosition = window.scrollY + windowHeight;
-
-  //     if (scrollPosition < element2Bottom) {
-  //       setIsFocus([true, false, false, false]);
-  //     } else if (scrollPosition < element3Bottom) {
-  //       setIsFocus([false, true, false, false]);
-  //     } else if (scrollPosition < element4Bottom) {
-  //       setIsFocus([false, false, true, false]);
-  //     } else {
-  //       setIsFocus([false, false, false, true]);
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
 
   useEffect(() => {
     const getScrollPosition = () => {
