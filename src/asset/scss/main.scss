@@ -15,6 +15,10 @@
       height: 10px;
       width: 10px;
       background-color: orange;
+
+      &.focused{
+        background-color: green;
+      }
     }
   }
 
