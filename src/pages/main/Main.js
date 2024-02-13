@@ -12,13 +12,10 @@ import WritesInfo from "../../component/common/WritesInfo";
 
 
 function Main() {
-  const element1 = useRef(null);
-  const element2 = useRef(null);
-  const element3 = useRef(null);
-  const element4 = useRef(null);
+  const elements = useRef([null, null, null, null]);
+
   const [isFocus, setIsFocus] = useState([true, false, false, false]);
   const [curScroll, setCurScroll] = useState(0);
-
 
   useEffect(() => {
     const getScrollPosition = () => {
@@ -31,15 +28,18 @@ function Main() {
     return () => window.removeEventListener('scroll', getScrollPosition);
   }, [])
 
-
   useEffect(() => {
     const scrollBottom = curScroll + window.innerHeight;
-    if (element1.current != null && element2.current != null && element3.current != null && element4.current != null) {
-      if (scrollBottom < element2.current.offsetTop + element2.current.getBoundingClientRect().height) {
+    const elementRefs = elements.current;
+
+    if (elementRefs.every(ref => ref !== null)) {
+      const [el1, el2, el3, el4] = elementRefs;
+
+      if (scrollBottom < el2.offsetTop + el2.getBoundingClientRect().height) {
         setIsFocus([true, false, false, false]);
-      } else if (scrollBottom < element3.current.offsetTop + element3.current.getBoundingClientRect().height) {
+      } else if (scrollBottom < el3.offsetTop + el3.getBoundingClientRect().height) {
         setIsFocus([false, true, false, false]);
-      } else if (scrollBottom < element4.current.offsetTop + element4.current.getBoundingClientRect().height) {
+      } else if (scrollBottom < el4.offsetTop + el4.getBoundingClientRect().height) {
         setIsFocus([false, false, true, false]);
       } else {
         setIsFocus([false, false, false, true]);
@@ -47,11 +47,12 @@ function Main() {
     }
   }, [curScroll])
 
-  const scrollToSection = (elementRef) => {
-    if (elementRef.current !== null) {
+  const scrollToSection = (index) => {
+    const elementRef = elements.current[index];
+    if (elementRef !== null) {
       const windowHeight = window.innerHeight;
-      const elementHeight = elementRef.current.getBoundingClientRect().height;
-      const elementOffsetTop = elementRef.current.offsetTop;
+      const elementHeight = elementRef.getBoundingClientRect().height;
+      const elementOffsetTop = elementRef.offsetTop;
       const scrollPosition = elementOffsetTop - (windowHeight + 100) / 2 + (elementHeight / 2);
       window.scrollTo({
         top: scrollPosition,
@@ -63,13 +64,12 @@ function Main() {
   return (
     <>
       <div className="scrollButtons-wrap">
-        <div className={`scrollButtons-button ${isFocus[0] ? 'focused' : ''}`} onClick={() => scrollToSection(element1)} />
-        <div className={`scrollButtons-button ${isFocus[1] ? 'focused' : ''}`} onClick={() => scrollToSection(element2)} />
-        <div className={`scrollButtons-button ${isFocus[2] ? 'focused' : ''}`} onClick={() => scrollToSection(element3)} />
-        <div className={`scrollButtons-button ${isFocus[3] ? 'focused' : ''}`} onClick={() => scrollToSection(element4)} />
+        {isFocus.map((focus, index) => (
+          <div key={index} className={`scrollButtons-button ${focus ? 'focused' : ''}`} onClick={() => scrollToSection(index)} />
+        ))}
       </div>
-      <Slide ref={element1} />
-      <section className="second-section" ref={element2}>
+      <Slide ref={el => elements.current[0] = el} />
+      <section className="second-section" ref={el => elements.current[1] = el}>
         <div className="second-section-wrap">
           <div className="second-section-title">About us</div>
           <div className="second-section-writes">Helping our customers create a better world</div>
@@ -79,13 +79,11 @@ function Main() {
             <SiteActivityComponent id="career" count={34} />
           </div>
         </div>
-
       </section>
-      <section className="third-section" ref={element3}>
+      <section className="third-section" ref={el => elements.current[2] = el}>
         <HalfPictureHalfWrites />
       </section>
-
-      <section className="fourth-section" ref={element4}>
+      <section className="fourth-section" ref={el => elements.current[3] = el}>
         <WritesInfo />
       </section>
     </>
