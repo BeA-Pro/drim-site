@@ -33,7 +33,7 @@ function Main() {
     const elementRefs = elements.current;
 
     if (elementRefs.every(ref => ref !== null)) {
-      const [el1, el2, el3, el4] = elementRefs;
+      const [, el2, el3, el4] = elementRefs;
 
       if (scrollBottom < el2.offsetTop + el2.getBoundingClientRect().height) {
         setIsFocus([true, false, false, false]);
