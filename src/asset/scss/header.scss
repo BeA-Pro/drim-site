@@ -18,10 +18,8 @@
   
       box-sizing : border-box;
       padding : 0 60px;
+      border-bottom : 0.75px solid #999;
 
-      &.hovered{
-        border-bottom : 0.75px solid #999;
-      }
   
       .Logo{
         height: 50px;
@@ -74,3 +72,39 @@
   }
 }
 
+@include mobile {
+  header-wrap {
+    position: fixed;
+    width: 100%;
+    background-color: $header-color;
+    z-index: 100000;
+    box-shadow: 0 1px 7px #555;
+  
+    .header-top{
+      display : flex;
+      width : 100%;
+      height : $header-size;
+      justify-content : space-between;
+      align-items : center;
+  
+      box-sizing : border-box;
+      padding : 0 60px;
+  
+      .Logo{
+        height: 30px;
+      }
+  
+      ul {
+        display : flex;
+        li button {
+          height : $header-size;
+          width : 150px;
+          text-align: center;
+          font-weight: bold;
+          font-size:18px;
+        }
+      }
+    }
+  }
+
+}
