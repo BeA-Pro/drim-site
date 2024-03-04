@@ -1,7 +1,5 @@
 @import "./variables";
 
-@import "./variables";
-
 // mixin 정의
 @mixin mobile {
   @media (max-width: #{$breakpoint-desktop - 1px}) {

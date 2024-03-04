@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import "../../asset/scss/siteActivityComponent.scss";
+import "../../../asset/scss/siteActivityComponent.scss";
 
 import MoneyIcon from '@mui/icons-material/Money';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';

@@ -3,12 +3,12 @@ import React, { useRef, useState, useEffect } from "react";
 import "../../asset/scss/main.scss";
 
 // component
-import Slide from "../../component/common/Slide";
-import SiteActivityComponent from "../../component/common/SiteActivityComponent";
+import Slide from "../../component/common/desktop/Slide";
+import SiteActivityComponent from "../../component/common/desktop/SiteActivityComponent";
 
 // icons
-import HalfPictureHalfWrites from "../../component/common/HalfPictureHalfWrites";
-import WritesInfo from "../../component/common/WritesInfo";
+import HalfPictureHalfWrites from "../../component/common/desktop/HalfPictureHalfWrites";
+import WritesInfo from "../../component/common/desktop/WritesInfo";
 
 
 function Main() {

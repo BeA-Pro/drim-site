@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback, forwardRef } from 'react';
 
 // scss
-import "../../asset/scss/slide.scss"
+import "../../../asset/scss/slide.scss"
 
 // images
-import Main_image1 from '../../asset/images/main_image1.png';
-import Main_image2 from '../../asset/images/main_image2.png';
-import Main_image3 from '../../asset/images/main_image3.png';
+import Main_image1 from '../../../asset/images/main_image1.png';
+import Main_image2 from '../../../asset/images/main_image2.png';
+import Main_image3 from '../../../asset/images/main_image3.png';
 
 const Slide = forwardRef((props, ref) => {
   const slideImages = [

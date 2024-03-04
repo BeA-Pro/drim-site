@@ -1,9 +1,9 @@
 import React from "react";
 //scss
-import "../../asset/scss/halfPictureHalfWrites.scss";
+import "../../../asset/scss/halfPictureHalfWrites.scss";
 
 // images
-import half_image from '../../asset/images/third-section-img.png';
+import half_image from '../../../asset/images/third-section-img.png';
 
 function HalfPictureHalfWrites() {
 

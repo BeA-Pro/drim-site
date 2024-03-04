@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // scss
-import "../../asset/scss/writesInfo.scss"
+import "../../../asset/scss/writesInfo.scss"
 
 // strings
-import { environment, environmentSubtitle, environmentWrites, social, socialSubtitle, socialWrites, goveranance, goverananceSubtitle, goverananceWrites } from '../../component/data/string'
+import { environment, environmentSubtitle, environmentWrites, social, socialSubtitle, socialWrites, goveranance, goverananceSubtitle, goverananceWrites } from '../../data/string'
 
 
 function WritesInfo() {

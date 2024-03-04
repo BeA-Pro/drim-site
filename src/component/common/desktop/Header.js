@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 // scss
-import "../../asset/scss/header.scss";
+import "../../../asset/scss/header.scss";
 
 //images
-import Logo from "../../asset/icons/drim-logo.svg";
+import Logo from "../../../asset/icons/drim-logo.svg";
 
 function Header() {
 
@@ -16,8 +16,6 @@ function Header() {
   const handleMouseLeave = () => {
     setIsBottomHover(false);
   };
-
-
 
 
   return (
@@ -78,7 +76,6 @@ function Header() {
       </div>
     </div >
   )
-
 }
 
 
