@@ -87,9 +87,9 @@
       justify-content : space-between;
       align-items : center;
       border-bottom : 0.75px solid #999;
-
+      padding: 0 20px;
       box-sizing : border-box;
-      padding : 0 20px;
+
   
       .Logo{
         height: 40px;
@@ -99,10 +99,59 @@
       height: 0;
       overflow: hidden;
       transition-duration: 0.75s;
+
+      .menu{
+        .menu-sub{
+          height: 40px;
+          border-top: 1px solid black; 
+          border-bottom: 1px solid black; 
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+          padding : 0 20px;
+          div{
+            font-size: 18px;
+          }
+        }
+        
+        .menu-sub-details{
+          padding: 0 40px;
+          display:flex;
+          flex-direction:column;
+          justify-content: center;
+          &.one{
+            // height:30.5px;
+            height: 0;
+            overflow: hidden;
+            transition-duration: 0.75s;
+            &.hover{
+              height: 30.5px;
+            }
+          }
+          &.three{
+            // height:70.5px;
+            height: 0;
+            overflow: hidden;
+            transition-duration: 0.75s;
+            &.hover{
+              height: 70.5px;
+            }
+          }
+          &.five{
+            // height:92px;
+            height: 0;
+            overflow: hidden;
+            transition-duration: 0.75s;
+            &.hover{
+              height:92px;
+            }
+          }
+        }
+      }
     }
 
-    .header-bottom.hovered{
-      height: 150px;
-    }
+    // .header-bottom.hovered{
+    //   height: 168px;
+    // }
   }
 }

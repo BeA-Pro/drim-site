@@ -32,8 +32,7 @@ function App() {
 
   return (
     <div className="wrap">
-      {isDesktop && <Header isDesktop />}
-      {!isDesktop && <MobileHeader />}
+      {isDesktop ? <Header isDesktop /> : <MobileHeader />}
       <div className="container">
         <Main />
       </div>
