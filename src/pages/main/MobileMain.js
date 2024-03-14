@@ -11,7 +11,7 @@ import HalfPictureHalfWrites from "../../component/common/desktop/HalfPictureHal
 import WritesInfo from "../../component/common/desktop/WritesInfo";
 
 
-function Main() {
+function MobileMain() {
   const elements = useRef([null, null, null, null]);
 
   const [isFocus, setIsFocus] = useState([true, false, false, false]);
@@ -90,4 +90,4 @@ function Main() {
   )
 }
 
-export default Main;
+export default MobileMain;

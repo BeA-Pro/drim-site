@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, forwardRef } from 'react';
 
 // scss
-import "../../../asset/scss/slide.scss"
+import "../../../asset/scss/desktop/slide.scss"
 
 // images
 import Main_image1 from '../../../asset/images/main_image1.png';

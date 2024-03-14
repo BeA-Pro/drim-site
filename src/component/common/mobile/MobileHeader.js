@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // scss
-import "../../../asset/scss/header.scss";
+import "../../../asset/scss/mobile/mobileHeader.scss";
 
 //images
 import Logo from "../../../asset/icons/drim-logo.svg";

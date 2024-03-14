@@ -1,6 +1,6 @@
 import React from "react";
 //scss
-import "../../../asset/scss/halfPictureHalfWrites.scss";
+import "../../../asset/scss/desktop/halfPictureHalfWrites.scss";
 
 // images
 import half_image from '../../../asset/images/third-section-img.png';

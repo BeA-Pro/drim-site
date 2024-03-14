@@ -1,4 +1,4 @@
-@import "mixin";
+@import "../mixin";
 @include desktop{
   .scrollButtons-wrap{
     position:fixed;
@@ -23,7 +23,7 @@
       border-radius:0px;
       background-color: transparent;
         background-size: cover; 
-        background-image : url('../images/Yellow.png');
+        background-image : url('../../images/Yellow.png');
       }
     }
   }

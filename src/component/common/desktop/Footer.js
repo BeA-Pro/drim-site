@@ -1,6 +1,6 @@
 import React from "react";
 //scss
-import "../../../asset/scss/footer.scss";
+import "../../../asset/scss/desktop/footer.scss";
 
 // Logo
 import Logo from "../../../asset/icons/drim-logo.svg";

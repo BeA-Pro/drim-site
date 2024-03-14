@@ -10,6 +10,7 @@ import { desktopSize } from "./component/data/style.js"
 
 // Mobile
 import MobileHeader from "./component/common/mobile/MobileHeader.js";
+import MobileMain from "./pages/main/MobileMain.js"
 
 
 
@@ -34,7 +35,7 @@ function App() {
     <div className="wrap">
       {isDesktop ? <Header isDesktop /> : <MobileHeader />}
       <div className="container">
-        <Main />
+        {isDesktop ? <Main /> : <MobileMain />}
       </div>
       <Footer />
     </div>
