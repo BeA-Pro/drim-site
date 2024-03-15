@@ -11,6 +11,7 @@ import { desktopSize } from "./component/data/style.js"
 // Mobile
 import MobileHeader from "./component/common/mobile/MobileHeader.js";
 import MobileMain from "./pages/main/MobileMain.js"
+import MobileFooter from "./component/common/mobile/MobileFooter.js";
 
 
 
@@ -37,7 +38,7 @@ function App() {
       <div className="container">
         {isDesktop ? <Main /> : <MobileMain />}
       </div>
-      <Footer />
+      {isDesktop ? <Footer /> : <MobileFooter />}
     </div>
   );
 }

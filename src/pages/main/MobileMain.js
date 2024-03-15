@@ -1,90 +1,35 @@
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 // scss
-import "../../asset/scss/desktop/main.scss";
+import "../../asset/scss/mobile/mobileMain.scss";
 
 // component
-import Slide from "../../component/common/desktop/Slide";
-import SiteActivityComponent from "../../component/common/desktop/SiteActivityComponent";
+import MobileSlide from "../../component/common/mobile/MobileSlide";
+import MobileSiteActivityComponent from "../../component/common/mobile/MobileSiteActivityComponent";
 
 // icons
-import HalfPictureHalfWrites from "../../component/common/desktop/HalfPictureHalfWrites";
-import WritesInfo from "../../component/common/desktop/WritesInfo";
+import MobileHalfPictureHalfWrites from "../../component/common/mobile/MobileHalfPictureHalfWrites";
+import MobileWritesInfo from "../../component/common/mobile/MobileWritesInfo";
 
 
 function MobileMain() {
-  const elements = useRef([null, null, null, null]);
-
-  const [isFocus, setIsFocus] = useState([true, false, false, false]);
-  const [curScroll, setCurScroll] = useState(0);
-
-  useEffect(() => {
-    const getScrollPosition = () => {
-      const pos = window.scrollY;
-      setCurScroll(pos);
-    }
-
-    window.addEventListener('scroll', getScrollPosition);
-
-    return () => window.removeEventListener('scroll', getScrollPosition);
-  }, [])
-
-  useEffect(() => {
-    const scrollBottom = curScroll + window.innerHeight;
-    const elementRefs = elements.current;
-
-    if (elementRefs.every(ref => ref !== null)) {
-      const [, el2, el3, el4] = elementRefs;
-
-      if (scrollBottom < el2.offsetTop + el2.getBoundingClientRect().height) {
-        setIsFocus([true, false, false, false]);
-      } else if (scrollBottom < el3.offsetTop + el3.getBoundingClientRect().height) {
-        setIsFocus([false, true, false, false]);
-      } else if (scrollBottom < el4.offsetTop + el4.getBoundingClientRect().height) {
-        setIsFocus([false, false, true, false]);
-      } else {
-        setIsFocus([false, false, false, true]);
-      }
-    }
-  }, [curScroll])
-
-  const scrollToSection = (index) => {
-    const elementRef = elements.current[index];
-    if (elementRef !== null) {
-      const windowHeight = window.innerHeight;
-      const elementHeight = elementRef.getBoundingClientRect().height;
-      const elementOffsetTop = elementRef.offsetTop;
-      const scrollPosition = elementOffsetTop - (windowHeight + 100) / 2 + (elementHeight / 2);
-      window.scrollTo({
-        top: scrollPosition,
-        behavior: 'smooth',
-      });
-    }
-  };
-
   return (
     <>
-      <div className="scrollButtons-wrap">
-        {isFocus.map((focus, index) => (
-          <div key={index} className={`scrollButtons-button ${focus ? 'focused' : ''}`} onClick={() => scrollToSection(index)} />
-        ))}
-      </div>
-      <Slide ref={el => elements.current[0] = el} />
-      <section className="second-section" ref={el => elements.current[1] = el}>
+      <MobileSlide />
+      <section className="second-section">
         <div className="second-section-wrap">
           <div className="second-section-title">About us</div>
-          <div className="second-section-writes">Helping our customers create a better world</div>
           <div className="siteActivityComponent-wrap">
-            <SiteActivityComponent id="projects" count={12} />
-            <SiteActivityComponent id="totalTurnover" count={23} />
-            <SiteActivityComponent id="career" count={34} />
+            <MobileSiteActivityComponent id="projects" count={12} />
+            <MobileSiteActivityComponent id="totalTurnover" count={23} />
+            <MobileSiteActivityComponent id="career" count={34} />
           </div>
         </div>
       </section>
-      <section className="third-section" ref={el => elements.current[2] = el}>
-        <HalfPictureHalfWrites />
+      <section className="third-section">
+        <MobileHalfPictureHalfWrites />
       </section>
-      <section className="fourth-section" ref={el => elements.current[3] = el}>
-        <WritesInfo />
+      <section className="fourth-section">
+        <MobileWritesInfo />
       </section>
     </>
   )

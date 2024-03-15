@@ -6,8 +6,18 @@
   background-color: $wrap-color;
 }
 
-.container {
-  padding-top: $header-size;
-  min-height: calc(100vh - #{$header-size} - #{$footer-size});
-  background-color: $container-color;
+@include desktop{
+  .container {
+    padding-top: $header-size;
+    min-height: calc(100vh - #{$header-size} - #{$footer-size});
+    background-color: $container-color;
+  }
+}
+
+@include mobile{
+  .container {
+    padding-top: $mobile-header-size;
+    min-height: calc(100vh - #{$mobile-header-size} - #{$footer-size});
+    background-color: $container-color;
+  }
 }

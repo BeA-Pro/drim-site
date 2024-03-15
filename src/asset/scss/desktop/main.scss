@@ -19,9 +19,9 @@
 
       &.focused{
         height: 20px;
-      width: 20px;
-      border-radius:0px;
-      background-color: transparent;
+        width: 20px;
+        border-radius:0px;
+        background-color: transparent;
         background-size: cover; 
         background-image : url('../../images/Yellow.png');
       }
@@ -67,9 +67,4 @@
   .fourth-section{
     height: 45vh;
   }
-}
-
-@include mobile {
-
-  
 }
