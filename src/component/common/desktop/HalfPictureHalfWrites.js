@@ -9,7 +9,9 @@ function HalfPictureHalfWrites() {
 
   return (
     <div className="halfPictureHalfWrites-wrap">
-      <img className="half-picture" src={half_image} alt="info" />
+      <div className="half-picture-container">
+        <img className="half-picture" src={half_image} alt="info" />
+      </div>
       <div className="half-writes">
         <div className="half-writes-title">Design Your Career With Us</div>
         <div className="half-writes-detail">Please write some words Please write some wordsPlease write some wordsPlease write some words Please write some words Please write some words Please write some words Please write some words Please write some words</div>

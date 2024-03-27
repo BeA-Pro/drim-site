@@ -5,12 +5,21 @@
     display: flex;
     height: 100%;
     width: 100%;
-  
-    .half-picture{
+    
+    .half-picture-container{
       width: 50%;
-      object-fit: cover;
-      object-position: top left;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow : hidden;
+      .half-picture{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
+    
     .half-writes{
       display: block;
       background-color: black;
