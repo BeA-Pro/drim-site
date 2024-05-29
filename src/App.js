@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
-// scss
-import "./asset/scss/common.scss"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 // Desktop
-import Main from "./pages/main/Main.js"
-import Header from "./component/common/desktop/Header.js"
-import Footer from "./component/common/desktop/Footer.js"
-import { desktopSize } from "./component/data/style.js"
+import Main from "./pages/desktop/Main.js"
+import Header from "./components/desktop/Header.js"
+import Footer from "./components/desktop/Footer.js"
+import { desktopSize } from "./data/style.js"
+import About from "./pages/desktop/About.js";
 
 // Mobile
-import MobileHeader from "./component/common/mobile/MobileHeader.js";
-import MobileMain from "./pages/main/MobileMain.js"
-import MobileFooter from "./component/common/mobile/MobileFooter.js";
+import MobileHeader from "./components/mobile/MobileHeader.js";
+import MobileMain from "./pages/mobile/MobileMain.js"
+import MobileFooter from "./components/mobile/MobileFooter.js";
+
 
 
 
@@ -33,13 +35,18 @@ function App() {
   }, []);
 
   return (
-    <div className="wrap">
-      {isDesktop ? <Header isDesktop /> : <MobileHeader />}
-      <div className="container">
-        {isDesktop ? <Main /> : <MobileMain />}
+    <Router>
+      <div className="wrap">
+        {isDesktop ? <Header isDesktop /> : <MobileHeader />}
+        <div className="container">
+          <Routes>
+            <Route path="/" element={isDesktop ? <Main /> : <MobileMain />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+        {isDesktop ? <Footer /> : <MobileFooter />}
       </div>
-      {isDesktop ? <Footer /> : <MobileFooter />}
-    </div>
+    </Router>
   );
 }
 

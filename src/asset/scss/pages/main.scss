@@ -1,0 +1,117 @@
+// Desktop
+@include desktop{
+  .scrollButtons-wrap{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: calc(50vh - 75px);
+    right: 40px;
+    height: 150px;
+    z-index: 9999;
+  
+    .scrollButtons-button{
+      height: 10px;
+      width: 10px;
+      border-radius:10px;
+      background-color: #2b2a2a;
+
+      &.focused{
+        height: 20px;
+        width: 20px;
+        border-radius:0px;
+        background-color: transparent;
+        background-size: cover; 
+        background-image : url('../../images/Yellow.png');
+      }
+    }
+  }
+
+  .second-section{
+    height:500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top left;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    padding: 0 30px;
+
+  
+    .second-section-wrap{
+      width: 100%;
+      .second-section-title{
+        font-size:40px;
+        font-weight: bold;
+      }
+      .second-section-writes{
+        font-size:20px;
+        font-weight: bold;
+        // margin-top:10px;
+      }
+      .siteActivityComponent-wrap{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        // margin-top:30px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  
+  .third-section{
+    height: 600px;
+  }
+  .fourth-section{
+    height: 400px;
+  }
+}
+
+// Mobile
+@include mobile{
+  .second-section{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top left;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    padding : 0 30px;
+
+  
+    .second-section-wrap{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .second-section-title{
+        font-size:30px;
+        font-weight: bold;
+      }
+      .second-section-writes{
+        font-size:20px;
+        font-weight: bold;
+        // margin-top:10px;
+      }
+      .siteActivityComponent-wrap{
+        width: 70%;
+        max-width: 500px;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+      }
+    }
+  }
+  
+  .third-section{
+    height: 80vh;
+    min-height: 600px;
+  }
+  .fourth-section{
+    height: 45vh;
+    min-height: 400px;
+  }
+}
