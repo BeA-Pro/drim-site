@@ -124,7 +124,7 @@ function MobileHeader() {
   return (
     <div className="header-wrap">
       <div className='header-top'>
-        <img src={Logo} alt="Logo" className="Logo" />
+        <Link to="/"><img src={Logo} alt="Logo" className="Logo" /></Link>
         {isBottomHover ?
           <img
             src={Close}

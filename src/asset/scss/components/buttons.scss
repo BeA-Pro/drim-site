@@ -1,10 +1,24 @@
 
 
-// commons
-.navigate-button{
-  width: 125px;
-  text-align: center;
-  &.active{
-    border-bottom: 2px solid black;
+@include desktop{
+  .navigate-button{
+    width: 125px;
+    text-align: center;
+    font-size:18px;
+    &.active{
+      border-bottom: 2px solid black;
+    }
   }
 }
+
+@include mobile{
+  .navigate-button{
+    width: 100px;
+    font-size:14px;
+    text-align: center;
+    &.active{
+      border-bottom: 2px solid black;
+    }
+  }
+}
+

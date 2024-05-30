@@ -6,7 +6,7 @@ import AboutImage from '../asset/images/about_image.png';
 import History from "../components/History";
 import { Directions } from "../components/Directions";
 import { Greeting } from "../components/Greeting";
-import { Management } from "../components/Management";
+import { Management, MobileManagement } from "../components/Management";
 
 
 function About() {
@@ -67,7 +67,7 @@ function MobileAbout() {
         <button className={`navigate-button ${active[3] ? "active" : ""}`} onClick={() => navigate("/about?click=directions")}>오시는 길</button>
 
       </div>
-      {active[0] && <Management />}
+      {active[0] && <MobileManagement />}
       {active[1] && <Greeting />}
       {active[2] && <History />}
       {active[3] && <Directions />}

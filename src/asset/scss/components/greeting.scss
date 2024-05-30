@@ -7,32 +7,35 @@
     margin: 70px 0;
     .greeting-decoration{
       position : absolute;
-      right: 50px;
+      right: 60px;
       bottom:0;
       opacity: 40%;
+      width: 400px;
+      height: 400px;
     }
+
     .greeting-title{
       margin-bottom : 70px;
-      font-size: 50px;
+      font-size: 45px;
       font-weight: bold;
     }
     .greeting-details{
-      width: 80%;
+      width: 75%;
       .greeting-details-title{
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 30px;
-        margin-bottom: 60px;
-        line-height:150%;
+        margin-bottom: 40px;
+        line-height:120%;
       }
       .greeting-details-writes{
-        font-size: 25px;
+        font-size: 23px;
         margin-bottom: 50px;
         font-weight: 5px;
-        line-height:150%;
+        line-height:135%;
       }
 
       .greeting-details-boss{
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 50px;
         font-weight: 600;
       }

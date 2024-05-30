@@ -18,9 +18,6 @@ function Greeting() {
         <p className="greeting-details-writes">
           저희 신영씨앤디는 인간이 생활하는 최적의 공간의 장소를 만든다는 최우선 목표로 끊임없는 혁신, 창의적 기술, 고객만족, 상생의 파트너십을 바탕으로 최고가치를 창출하는 회사가 될 것임은 물론 우리의 역량과 재원을 통해 명실 상부한 초우량 종합 건설회사로 자리매김할 것입니다.
         </p>
-        <p className="greeting-details-writes">
-          새로운 미래창조를 위한 적극적인 투자와 끊임없는 혁신으로 미래를 생각하는 건설명가로서 고객 여러분들께 최고의 가치를 드리고 믿음에 보답할 수 있는 Construction Trend Leader가 되어 지속적으로 안정적인 성장을 이어 갈 수 있도록 노력하겠습니다. 감사합니다.
-        </p>
         <p className="greeting-details-boss">
           (주) 드림종합건설 대표이사 박윤환
         </p>
