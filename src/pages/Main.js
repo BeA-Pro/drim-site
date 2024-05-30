@@ -1,12 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 
 // component
-import Slide from "../../components/desktop/Slide";
-import SiteActivityComponent from "../../components/desktop/SiteActivityComponent";
-
-// icons
-import HalfPictureHalfWrites from "../../components/desktop/HalfPictureHalfWrites";
-import WritesInfo from "../../components/desktop/WritesInfo";
+import { Slide, MobileSlide } from "../components/Slide";
+import { SiteActivityComponent, MobileSiteActivityComponent } from "../components/SiteActivityComponent";
+import { HalfPictureHalfWrites, MobileHalfPictureHalfWrites } from "../components/HalfPictureHalfWrites";
+import { WritesInfo, MobileWritesInfo } from "../components/WritesInfo";
 
 
 function Main() {
@@ -88,4 +86,28 @@ function Main() {
   )
 }
 
-export default Main;
+function MobileMain() {
+  return (
+    <>
+      <MobileSlide />
+      <section className="second-section">
+        <div className="second-section-wrap">
+          <div className="second-section-title">About us</div>
+          <div className="siteActivityComponent-wrap">
+            <MobileSiteActivityComponent id="projects" count={12} />
+            <MobileSiteActivityComponent id="totalTurnover" count={23} />
+            <MobileSiteActivityComponent id="career" count={34} />
+          </div>
+        </div>
+      </section>
+      <section className="third-section">
+        <MobileHalfPictureHalfWrites />
+      </section>
+      <section className="fourth-section">
+        <MobileWritesInfo />
+      </section>
+    </>
+  )
+}
+
+export { Main, MobileMain }

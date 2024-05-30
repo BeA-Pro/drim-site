@@ -3,17 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 // Desktop
-import Main from "./pages/desktop/Main.js"
-import Header from "./components/desktop/Header.js"
-import Footer from "./components/desktop/Footer.js"
+import { Main, MobileMain } from "./pages/Main.js"
+import { Header, MobileHeader } from "./components/Header.js"
+import { Footer, MobileFooter } from "./components/Footer.js"
 import { desktopSize } from "./data/style.js"
-import About from "./pages/desktop/About.js";
-
-// Mobile
-import MobileHeader from "./components/mobile/MobileHeader.js";
-import MobileMain from "./pages/mobile/MobileMain.js"
-import MobileFooter from "./components/mobile/MobileFooter.js";
-
+import { About, MobileAbout } from "./pages/About.js";
 
 
 
@@ -37,11 +31,11 @@ function App() {
   return (
     <Router>
       <div className="wrap">
-        {isDesktop ? <Header isDesktop /> : <MobileHeader />}
+        {isDesktop ? <Header /> : <MobileHeader />}
         <div className="container">
           <Routes>
             <Route path="/" element={isDesktop ? <Main /> : <MobileMain />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={isDesktop ? <About /> : <MobileAbout />} />
           </Routes>
         </div>
         {isDesktop ? <Footer /> : <MobileFooter />}

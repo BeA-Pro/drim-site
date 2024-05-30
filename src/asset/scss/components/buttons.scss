@@ -1,0 +1,10 @@
+
+
+// commons
+.navigate-button{
+  width: 125px;
+  text-align: center;
+  &.active{
+    border-bottom: 2px solid black;
+  }
+}
