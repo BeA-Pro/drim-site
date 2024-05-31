@@ -81,7 +81,7 @@ function Header() {
             <li>부동산보고서</li>
           </ul>
           <ul>
-            <li>시공문의</li>
+            <li><Link to="inqury">시공문의</Link></li>
           </ul>
         </div>
 
@@ -130,6 +130,7 @@ function MobileHeader() {
     else if (index === 1) navigate('/about?click=greeting');
     else if (index === 2) navigate('/about?click=history');
     else if (index === 3) navigate('/about?click=directions');
+    else if (index === 8) navigate('/inqury');
 
 
 
@@ -215,7 +216,7 @@ function MobileHeader() {
               }
             </div>
             <ul className={`menu-sub-details one ${detailsHeights[4] ? 'hover' : ''}`}>
-              <li>시공문의</li>
+              <li><button onClick={() => clickButton(8)}>시공문의</button></li>
             </ul>
           </div>
         </nav>

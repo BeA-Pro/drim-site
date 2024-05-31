@@ -5,8 +5,6 @@ import BusLogo from "../asset/icons/iconBus.svg";
 import SubwayLogo from "../asset/icons/iconSubway.svg";
 
 function Directions() {
-
-
   // 네이버 지도 띄우기
   useEffect(() => {
     const naver = window.naver;

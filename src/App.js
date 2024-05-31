@@ -8,6 +8,7 @@ import { Header, MobileHeader } from "./components/Header.js"
 import { Footer, MobileFooter } from "./components/Footer.js"
 import { desktopSize } from "./data/style.js"
 import { About, MobileAbout } from "./pages/About.js";
+import { Inquiry, MobileInquiry } from "./pages/Inquiry.js";
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Routes>
             <Route path="/" element={isDesktop ? <Main /> : <MobileMain />} />
             <Route path="/about" element={isDesktop ? <About /> : <MobileAbout />} />
+            <Route path="/inqury" element={isDesktop ? <Inquiry /> : <MobileInquiry />} />
           </Routes>
         </div>
         {isDesktop ? <Footer /> : <MobileFooter />}

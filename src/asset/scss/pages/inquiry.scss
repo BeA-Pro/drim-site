@@ -1,0 +1,72 @@
+@include desktop{
+  .inquiry-wrapper{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 70px 0;
+    
+
+    .inquiry-title{
+      margin-bottom : 70px;
+      font-size: 45px;
+      font-weight: bold;
+    }
+    .inquiry-info{
+      display: flex;
+      
+      width: 80%;
+      margin-bottom:100px;
+      .inquiry-info-left{
+        flex:3;
+      }
+      .inquiry-info-right{
+        flex:7;
+      }
+
+      label{
+        font-size:20px;
+        margin-bottom: 10px;
+      }
+      input,select{
+        height: 40px;
+        
+      }
+
+    }
+    
+
+    .form-group{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .inquiry-info-title{
+      font-size:30px;
+      margin-bottom: 10px;
+    }
+
+    .inquiry-info-require{
+      font-size:20px;
+      
+    }
+  }
+}
+
+
+@include mobile{
+  .inquiry-wrapper{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 30px 0;
+    
+
+    .inquiry-title{
+      margin-bottom : 30px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+  }
+}
