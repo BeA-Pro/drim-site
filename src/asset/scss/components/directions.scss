@@ -70,3 +70,58 @@
     }
   }
 }
+
+
+@include mobile{
+  .directions-wrapper{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 30px 0;
+    
+
+    .directions-title{
+      margin-bottom : 30px;
+        font-size: 25px;
+        font-weight: bold;
+        
+    }
+
+    .directions-info{
+      width: 80%;
+      .directions-info-map{
+        height: 300px;
+        margin-bottom: 20px;
+      }
+
+      .directions-info-name{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .directions-info-address{
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .directions-info-route-row1{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom : 5px;
+        .directions-logo{
+          margin-right: 10px;
+        }
+      }
+
+      .directions-info-route-row2{
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+
+    
+
+  }
+}

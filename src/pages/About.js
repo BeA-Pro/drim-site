@@ -4,8 +4,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 //image
 import AboutImage from '../asset/images/about_image.png';
 import History from "../components/History";
-import { Directions } from "../components/Directions";
-import { Greeting } from "../components/Greeting";
+import { Directions, MobileDirections } from "../components/Directions";
+import { Greeting, MobileGreeting } from "../components/Greeting";
 import { Management, MobileManagement } from "../components/Management";
 
 
@@ -68,9 +68,9 @@ function MobileAbout() {
 
       </div>
       {active[0] && <MobileManagement />}
-      {active[1] && <Greeting />}
+      {active[1] && <MobileGreeting />}
       {active[2] && <History />}
-      {active[3] && <Directions />}
+      {active[3] && <MobileDirections />}
     </>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 //images
 import Logo from "../asset/icons/drim-logo.svg";
@@ -22,7 +22,12 @@ function Header() {
   const handleMouseLeave = () => {
     setIsBottomHover(false);
   };
+  const navigate = useNavigate();
 
+  const clickMenuButton = (num) => {
+    if (num === 0) navigate('/about?click=management');
+
+  }
 
   return (
     <div className="header-wrap">
@@ -33,7 +38,7 @@ function Header() {
           <ul onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
             <li>
-              <button>회사소개</button>
+              <button onClick={() => clickMenuButton(0)}>회사소개</button>
             </li>
             <li>
               <button>사업소개</button>
@@ -55,10 +60,10 @@ function Header() {
         <div className="menu-details">
           <ul>
             <li>
-              <Link to="about">경영이념</Link>
+              <Link to="about?click=management">경영이념</Link>
             </li>
             <li>
-              <Link to="about">인사말</Link>
+              <Link to="about?click=greeting">인사말</Link>
             </li>
             <li>
               <Link to="about?click=history">연혁</Link>
@@ -86,7 +91,7 @@ function Header() {
 }
 
 function MobileHeader() {
-
+  const navigate = useNavigate();
   const heightsInfo = [168, 92, 70.5, 30.5, 30.5, 0]
 
   const [isBottomHover, setIsBottomHover] = useState(false);
@@ -118,6 +123,18 @@ function MobileHeader() {
       temp[temp[0]] = true; // 현재 인덱스 true로 표시
       setDetailsHeights(temp);
     }
+  }
+
+  const clickButton = (index) => {
+    if (index === 0) navigate('/about?click=management');
+    else if (index === 1) navigate('/about?click=greeting');
+    else if (index === 2) navigate('/about?click=history');
+    else if (index === 3) navigate('/about?click=directions');
+
+
+
+    clickMenuButton();
+
   }
 
 
@@ -156,16 +173,16 @@ function MobileHeader() {
             </div>
             <ul className={`menu-sub-details five ${detailsHeights[1] ? 'hover' : ''}`}>
               <li>
-                경영이념
+                <button onClick={() => clickButton(0)}>경영이념</button>
               </li>
               <li>
-                인사말
+                <button onClick={() => clickButton(1)}>인사말</button>
               </li>
               <li>
-                연혁
+                <button onClick={() => clickButton(2)}>연혁</button>
               </li>
               <li>
-                오시는 길
+                <button onClick={() => clickButton(3)}>오시는 길</button>
               </li>
             </ul>
             <div className="menu-sub">

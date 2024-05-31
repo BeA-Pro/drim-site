@@ -42,3 +42,48 @@
     }
   }
 }
+
+@include mobile{
+  .greeting-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position : relative;
+    margin: 50px 0;
+    .greeting-decoration{
+      position : absolute;
+      right: 60px;
+      bottom: 20px;
+      opacity: 40%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .greeting-title{
+      margin-bottom : 30px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .greeting-details{
+      width: 75%;
+      .greeting-details-title{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        line-height:120%;
+      }
+      .greeting-details-writes{
+        font-size: 12px;
+        margin-bottom: 20px;
+        font-weight: 5px;
+        line-height:135%;
+      }
+
+      .greeting-details-boss{
+        font-size: 12.5px;
+        margin-bottom: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+}
