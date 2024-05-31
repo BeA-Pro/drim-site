@@ -39,6 +39,7 @@ function Inquiry() {
     event.preventDefault();
     const email = `${emailLocalPart}@${emailDomainPart}`;
     console.log('Submitted email:', email);
+    console.log(file);
     // 여기에 폼 제출 로직 추가
   };
   return (
