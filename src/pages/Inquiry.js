@@ -30,7 +30,9 @@ function Inquiry() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    console.log(process.env.REACT_APP_SERVICE_ID)
+    console.log(process.env.REACT_APP_TEMPLATE_ID)
+    console.log(process.env.REACT_APP_PUBLICKEY)
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, formRef.current, process.env.REACT_APP_PUBLICKEY)
       .then((response) => {
         alert("성공적으로 이메일이 전송되었습니다.");
