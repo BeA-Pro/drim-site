@@ -9,6 +9,8 @@ import { Footer, MobileFooter } from "./components/Footer.js"
 import { desktopSize } from "./data/style.js"
 import { About, MobileAbout } from "./pages/About.js";
 import { Inquiry, MobileInquiry } from "./pages/Inquiry.js";
+import { MobileReport, Report } from "./pages/Report.js";
+import { Introduce, MobileIntroduce } from "./pages/Introduce.js";
 
 
 
@@ -37,7 +39,9 @@ function App() {
           <Routes>
             <Route path="/" element={isDesktop ? <Main /> : <MobileMain />} />
             <Route path="/about" element={isDesktop ? <About /> : <MobileAbout />} />
-            <Route path="/inqury" element={isDesktop ? <Inquiry /> : <MobileInquiry />} />
+            <Route path="/introduce" element={isDesktop ? <Introduce /> : <MobileIntroduce />} />
+            <Route path="/inquiry" element={isDesktop ? <Inquiry /> : <MobileInquiry />} />
+            <Route path="/report" element={isDesktop ? <Report /> : <MobileReport />} />
           </Routes>
         </div>
         {isDesktop ? <Footer /> : <MobileFooter />}

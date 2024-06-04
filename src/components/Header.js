@@ -26,6 +26,9 @@ function Header() {
 
   const clickMenuButton = (num) => {
     if (num === 0) navigate('/about?click=management');
+    else if (num === 1) navigate('/introduce');
+    else if (num === 2) navigate('/report');
+    else if (num === 3) navigate('/inquiry')
 
   }
 
@@ -41,13 +44,13 @@ function Header() {
               <button onClick={() => clickMenuButton(0)}>회사소개</button>
             </li>
             <li>
-              <button>사업소개</button>
+              <button onClick={() => clickMenuButton(1)}>사업소개</button>
             </li>
             <li>
-              <button>부동산보고서</button>
+              <button onClick={() => clickMenuButton(2)}>부동산보고서</button>
             </li>
             <li>
-              <button>시공문의</button>
+              <button onClick={() => clickMenuButton(3)}>시공문의</button>
             </li>
           </ul>
         </nav>
@@ -78,10 +81,10 @@ function Header() {
             <li>인테리어사업</li>
           </ul>
           <ul>
-            <li>부동산보고서</li>
+            <li><Link to="report">부동산보고서</Link></li>
           </ul>
           <ul>
-            <li><Link to="inqury">시공문의</Link></li>
+            <li><Link to="inquiry">시공문의</Link></li>
           </ul>
         </div>
 
@@ -130,7 +133,8 @@ function MobileHeader() {
     else if (index === 1) navigate('/about?click=greeting');
     else if (index === 2) navigate('/about?click=history');
     else if (index === 3) navigate('/about?click=directions');
-    else if (index === 8) navigate('/inqury');
+    else if (index === 7) navigate('/report');
+    else if (index === 8) navigate('/inquiry');
 
 
 
@@ -206,7 +210,7 @@ function MobileHeader() {
               }
             </div>
             <ul className={`menu-sub-details one ${detailsHeights[3] ? 'hover' : ''}`}>
-              <li>부동산보고서</li>
+              <li><button onClick={() => clickButton(7)}>부동산보고서</button></li>
             </ul>
             <div className="menu-sub">
               <div className="menu-sub-name">시공문의</div>
