@@ -1,0 +1,52 @@
+[
+  {
+    "id" : "0",
+    "name": "거룩한빛운정교회",
+    "category" : "1",
+    "images": ["/introduce/image1-1.png","/introduce/image1-2.png"],
+    "year" : "2021",
+    "buildingArea" : "919.41",
+    "totalFloorArea": "4257.73",
+    "siteArea" : "1895.40",
+    "buildingScale" : "지하 2층 / 지상 4층",
+    "buildingStructure" : "철골콘크리트구조",
+    "mainFinishes" : "점토벽톨"
+  },
+  {
+    "id" : "1",
+    "name": "거룩한빛운정교회",
+    "category" : "1",
+    "images": ["/introduce/image2-1.png"],
+    "year" : "2021",
+    "buildingArea" : "919.41",
+    "totalFloorArea": "4257.73",
+    "siteArea" : "1895.40",
+    "buildingScale" : "지하 2층 / 지상 4층",
+    "buildingStructure" : "철골콘크리트구조",
+    "mainFinishes" : "점토벽톨"
+  },{
+    "id" : "2",
+    "name": "거룩한빛운정교회",
+    "category" : "1",
+    "images": ["/introduce/image1-1.png"],
+    "year" : "2021",
+    "buildingArea" : "919.41",
+    "totalFloorArea": "4257.73",
+    "siteArea" : "1895.40",
+    "buildingScale" : "지하 2층 / 지상 4층",
+    "buildingStructure" : "철골콘크리트구조",
+    "mainFinishes" : "점토벽톨"
+  },{
+    "id" : "3",
+    "name": "거룩한빛운정교회",
+    "category" : "1",
+    "images": ["/introduce/image1-1.png"],
+    "year" : "2021",
+    "buildingArea" : "919.41",
+    "totalFloorArea": "4257.73",
+    "siteArea" : "1895.40",
+    "buildingScale" : "지하 2층 / 지상 4층",
+    "buildingStructure" : "철골콘크리트구조",
+    "mainFinishes" : "점토벽톨"
+  }
+]

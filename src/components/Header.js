@@ -26,7 +26,7 @@ function Header() {
 
   const clickMenuButton = (num) => {
     if (num === 0) navigate('/about?click=management');
-    else if (num === 1) navigate('/introduce');
+    else if (num === 1) navigate('/introduce?click=all');
     else if (num === 2) navigate('/report');
     else if (num === 3) navigate('/inquiry')
 
@@ -76,9 +76,9 @@ function Header() {
             </li>
           </ul>
           <ul>
-            <li>건축사업</li>
-            <li>리모델링사업</li>
-            <li>인테리어사업</li>
+            <li><Link to="introduce?click=architecture">건축사업</Link></li>
+            <li><Link to="introduce?click=remodeling">리모델링사업</Link></li>
+            <li><Link to="introduce?click=interior">인테리어사업</Link></li>
           </ul>
           <ul>
             <li><Link to="report">부동산보고서</Link></li>

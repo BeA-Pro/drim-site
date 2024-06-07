@@ -11,6 +11,7 @@ import { About, MobileAbout } from "./pages/About.js";
 import { Inquiry, MobileInquiry } from "./pages/Inquiry.js";
 import { MobileReport, Report } from "./pages/Report.js";
 import { Introduce, MobileIntroduce } from "./pages/Introduce.js";
+import { Content, MobileContent } from "./pages/Content.js";
 
 
 
@@ -42,6 +43,7 @@ function App() {
             <Route path="/introduce" element={isDesktop ? <Introduce /> : <MobileIntroduce />} />
             <Route path="/inquiry" element={isDesktop ? <Inquiry /> : <MobileInquiry />} />
             <Route path="/report" element={isDesktop ? <Report /> : <MobileReport />} />
+            <Route path="/content" element={isDesktop ? <Content /> : <MobileContent />} />
           </Routes>
         </div>
         {isDesktop ? <Footer /> : <MobileFooter />}

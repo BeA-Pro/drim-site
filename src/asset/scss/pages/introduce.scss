@@ -1,0 +1,55 @@
+@include desktop{
+  .introduce-wrapper{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom : 70px;
+  }
+
+  .introduce-title{
+    margin: 70px 0;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .introduce-content-wrapper{
+    width: 80%;
+  }
+
+  .introduce-bar{
+    width: 100%;
+    border: 0.5px solid black;
+    height: 0px;
+    margin: 15px 0;
+  }
+
+  .introduce-contents{
+    width: 100%;
+    height: 800px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .introduce-content{
+    width: calc(100% / 3 - 10px);
+    margin: 5px;
+    position: relative;
+    
+  }
+
+  .introduce-content-title{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size:20px;
+    color:white;
+    font-weight: bold;
+  }
+
+  .introduce-content-image{
+    width: 100%;
+    object-fit: cover;
+  }
+}
