@@ -12,7 +12,7 @@
 
       .cls-3 {
         fill: #231815;
-        font-family: H2hdrM, HYHeadLine-Medium;
+        font-family: 'Noto Sans KR', sans-serif;
         font-size: 200px;
         letter-spacing: -.05em;
         stroke: #231815;

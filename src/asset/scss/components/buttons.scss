@@ -20,6 +20,7 @@
     border-radius: 30px;
     text-align: center;
     margin-right : 5px;
+    cursor: pointer;
     &.active{
       background-color: black;
       color:white;
@@ -34,6 +35,23 @@
     text-align: center;
     &.active{
       border-bottom: 2px solid black;
+    }
+  }
+
+  .introduce-button{
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+    font-size:12px;
+    border-radius: 30px;
+    text-align: center;
+    margin-right : 5px;
+    cursor: pointer;
+    &.active{
+      background-color: black;
+      color:white;
     }
   }
 }

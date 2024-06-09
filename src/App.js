@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useLocation, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 // Desktop
@@ -13,6 +13,15 @@ import { MobileReport, Report } from "./pages/Report.js";
 import { Introduce, MobileIntroduce } from "./pages/Introduce.js";
 import { Content, MobileContent } from "./pages/Content.js";
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 
 function App() {
@@ -34,6 +43,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="wrap">
         {isDesktop ? <Header /> : <MobileHeader />}
         <div className="container">

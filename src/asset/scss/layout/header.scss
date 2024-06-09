@@ -21,11 +21,13 @@
   
       .Logo{
         height: 50px;
+        cursor: pointer;
       }
   
       ul {
         display : flex;
         li button {
+          cursor: pointer;
           height : $header-size;
           width : 150px;
           text-align: center;
@@ -53,9 +55,8 @@
         ul{
           width: 150px;
           text-align:center;
-  
           li {
-            margin : 10px 0 ;
+            margin : 15px 0 ;
           }
           li:hover{
               color : blue;
@@ -92,6 +93,7 @@
   
       .Logo{
         height: 30px;
+        cursor: pointer;
       }
 
       .Menu{height: 20px;}
@@ -102,17 +104,15 @@
       transition-duration: 0.75s;
 
       .menu{
+        font-size:15px;
         .menu-sub{
-          height: 40px;
-          border-top: 1px solid black; 
-          border-bottom: 1px solid black; 
+          height: 35px;
+          border-top: 0.5px solid black; 
+   
           display:flex;
           align-items: center;
           justify-content: space-between;
           padding : 0 20px;
-          div{
-            font-size: 18px;
-          }
         }
         
         .menu-sub-details{
@@ -120,6 +120,10 @@
           display:flex;
           flex-direction:column;
           justify-content: center;
+          border-top: 0.5px solid black; 
+          li {
+            margin : 1.5px 0;
+          }
           &.one{
             // height:30.5px;
             height: 0;
@@ -140,6 +144,7 @@
           }
           &.five{
             // height:92px;
+    
             height: 0;
             overflow: hidden;
             transition-duration: 0.75s;

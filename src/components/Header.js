@@ -95,7 +95,7 @@ function Header() {
 
 function MobileHeader() {
   const navigate = useNavigate();
-  const heightsInfo = [168, 92, 70.5, 30.5, 30.5, 0]
+  const heightsInfo = [140, 92, 70.5, 30.5, 30.5, 0]
 
   const [isBottomHover, setIsBottomHover] = useState(false);
   const [height, setHeight] = useState(0)
