@@ -25,19 +25,20 @@
 
   .introduce-contents{
     width: 100%;
-    height: 800px;
+    max-height: 800px;
     overflow-y: scroll;
     overflow-x:hidden;
     display: flex;
     flex-wrap: wrap;
+
   }
 
   .introduce-content{
     width: calc(100% / 3 - 10px);
+    height: calc(100% / 3 - 10px);
     margin: 5px;
     position: relative;
     cursor: pointer;
-    
   }
 
   .introduce-content-title{
@@ -51,6 +52,7 @@
 
   .introduce-content-image{
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 }
@@ -82,15 +84,17 @@
 
   .introduce-contents{
     width: 100%;
-    height: 400px;
+    max-height: 400px;
     overflow-y: scroll;
     overflow-x:hidden;
     display: flex;
     flex-wrap: wrap;
+    
   }
 
   .introduce-content{
     width: calc(100% / 2 - 10px);
+    height: calc(100% / 2 -10px);
     margin: 5px;
     position: relative;
     cursor: pointer;
@@ -107,6 +111,8 @@
   }
 
   .introduce-content-image{
+    // width: calc(100% / 2 - 10px);
+    height: 100%;
     width: 100%;
     object-fit: cover;
   }
