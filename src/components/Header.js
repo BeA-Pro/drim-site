@@ -95,7 +95,7 @@ function Header() {
 
 function MobileHeader() {
   const navigate = useNavigate();
-  const heightsInfo = [140, 92, 70.5, 30.5, 30.5, 0]
+  const heightsInfo = [142, 92, 70.5, 30.5, 30.5, 0]
 
   const [isBottomHover, setIsBottomHover] = useState(false);
   const [height, setHeight] = useState(0)
@@ -133,6 +133,9 @@ function MobileHeader() {
     else if (index === 1) navigate('/about?click=greeting');
     else if (index === 2) navigate('/about?click=history');
     else if (index === 3) navigate('/about?click=directions');
+    else if (index === 4) navigate('/introduce?click=architecture');
+    else if (index === 5) navigate('/introduce?click=remodeling');
+    else if (index === 6) navigate('/introduce?click=interior');
     else if (index === 7) navigate('/report');
     else if (index === 8) navigate('/inquiry');
 
@@ -198,9 +201,15 @@ function MobileHeader() {
               }
             </div>
             <ul className={`menu-sub-details three ${detailsHeights[2] ? 'hover' : ''}`}>
-              <li>건축사업</li>
-              <li>리모델링사업</li>
-              <li>인테리어사업</li>
+              <li>
+                <button onClick={() => clickButton(4)}>건축사업</button>
+              </li>
+              <li>
+                <button onClick={() => clickButton(5)}>리모델링사업</button>
+              </li>
+              <li>
+                <button onClick={() => clickButton(6)}>인테리어사업</button>
+              </li>
             </ul>
             <div className="menu-sub">
               <div className="menu-sub-name">부동산보고서</div>

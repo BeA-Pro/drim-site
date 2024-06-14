@@ -1,10 +1,11 @@
 import React from 'react'
 
 //images
-import IconHand from "../asset/icons/iconHand.svg";
-import IconJustice from "../asset/icons/iconJustice.svg";
-import IconLight from "../asset/icons/iconLight.svg";
+import IconTech from "../asset/icons/science.svg";
+import IconDesign from "../asset/icons/apartment.svg";
+import IconHQ from "../asset/icons/high_quality.svg";
 import MissionImage from "../asset/images/imgMission.png";
+import { management1, management2, management3, management4 } from '../data/string';
 
 function Management() {
   return (
@@ -14,8 +15,7 @@ function Management() {
         <div className="management-details-row">
           <p className="management-details-title">Mission</p>
           <div className="management-details-content">
-            <p className="management-details-writes">드림종합건설은 인간이 생활하는
-              최적의 공간과 장소를 제공합니다</p>
+            <p className="management-details-writes">{management1}</p>
             <img src={MissionImage} alt="MissionImage" className="management-details-image" />
           </div>
         </div>
@@ -23,16 +23,16 @@ function Management() {
           <p className="management-details-title">Core Value</p>
           <div className="management-details-content">
             <div className="management-details-value">
-              <img src={IconHand} alt="iconHand" className="management-icon" />
-              <p className="management-value-writes" >기본과 원칙</p>
+              <img src={IconTech} alt="IconTech" className="management-icon" />
+              <p className="management-value-writes" >{management2}</p>
             </div>
             <div className="management-details-value">
-              <img src={IconJustice} alt="iconJustice" className="management-icon" />
-              <p className="management-value-writes" >성과중심의경영</p>
+              <img src={IconDesign} alt="iconJustice" className="management-icon" />
+              <p className="management-value-writes" >{management3}</p>
             </div>
             <div className="management-details-value">
-              <img src={IconLight} alt="iconLight" className="management-icon" />
-              <p className="management-value-writes" >조직역량강화</p>
+              <img src={IconHQ} alt="iconLight" className="management-icon" />
+              <p className="management-value-writes" >{management4}</p>
             </div>
           </div>
         </div>
@@ -49,28 +49,27 @@ function MobileManagement() {
         <div className="management-details-row">
           <p className="management-details-title">Mission</p>
           <div className="management-details-content">
-            <p className="management-details-writes">드림종합건설은 인간이 생활하는
-              최적의 공간과 장소를 제공합니다</p>
+            <p className="management-details-writes">{management1}</p>
           </div>
         </div>
         <div className="management-details-row">
           <p className="management-details-title">Core Value</p>
           <div className="management-details-content">
             <div className="management-details-value">
-              <img src={IconHand} alt="iconHand" className="management-icon" />
-              <p className="management-value-writes" >기본과 원칙</p>
+              <img src={IconTech} alt="IconTech" className="management-icon" />
+              <p className="management-value-writes" >{management2}</p>
 
 
             </div>
             <div className="management-details-value">
-              <img src={IconJustice} alt="iconJustice" className="management-icon" />
-              <p className="management-value-writes" >성과중심의경영</p>
+              <img src={IconDesign} alt="iconJustice" className="management-icon" />
+              <p className="management-value-writes" >{management3}</p>
 
 
             </div>
             <div className="management-details-value">
-              <img src={IconLight} alt="iconLight" className="management-icon" />
-              <p className="management-value-writes" >조직역량강화</p>
+              <img src={IconHQ} alt="iconLight" className="management-icon" />
+              <p className="management-value-writes" >{management4}</p>
 
 
             </div>

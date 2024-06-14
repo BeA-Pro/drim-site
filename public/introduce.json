@@ -1,52 +1,63 @@
 [
   {
     "id" : "0",
-    "name": "거룩한빛운정교회",
+    "name": "용미꿈터",
     "category" : "1",
-    "images": ["/introduce/image1-1.png","/introduce/image1-2.png"],
-    "year" : "2021",
-    "buildingArea" : "919.41",
-    "totalFloorArea": "4257.73",
-    "siteArea" : "1895.40",
-    "buildingScale" : "지하 2층 / 지상 4층",
-    "buildingStructure" : "철골콘크리트구조",
-    "mainFinishes" : "점토벽톨"
+    "images": ["/introduce/용미꿈터/용미꿈터1.jpeg","/introduce/용미꿈터/용미꿈터2.jpeg","/introduce/용미꿈터/용미꿈터3.jpeg","/introduce/용미꿈터/용미꿈터4.jpeg","/introduce/용미꿈터/용미꿈터5.jpeg","/introduce/용미꿈터/용미꿈터6.jpeg","/introduce/용미꿈터/용미꿈터7.jpeg","/introduce/용미꿈터/용미꿈터8.jpeg"],
+    "buildingArea" : "593.92",
+    "totalFloorArea": "729.79",
+    "siteArea" : "6,330.00",
+    "buildingScale" : "지상 2층",
+    "buildingStructure" : "철근콘크리트조 / 철골구",
+    "mainFinishes" : "점토벽돌 / 징크판넬"
   },
   {
     "id" : "1",
     "name": "거룩한빛운정교회",
     "category" : "1",
-    "images": ["/introduce/image2-1.png"],
-    "year" : "2021",
+    "images": ["/introduce/거룩한빛운정교회/거룩한빛운정교회1.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회2.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회3.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회4.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회5.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회6.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회7.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회8.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회9.jpeg","/introduce/거룩한빛운정교회/거룩한빛운정교회10.jpeg"],
     "buildingArea" : "919.41",
     "totalFloorArea": "4257.73",
     "siteArea" : "1895.40",
-    "buildingScale" : "지하 2층 / 지상 4층",
-    "buildingStructure" : "철골콘크리트구조",
-    "mainFinishes" : "점토벽톨"
-  },{
+    "buildingScale" : "지하2층 / 지상4",
+    "buildingStructure" : "철골철근콘크리트조",
+    "mainFinishes" : "점토벽돌"
+  },
+  {
     "id" : "2",
-    "name": "거룩한빛운정교회",
+    "name": "아름다운우리교회",
     "category" : "1",
-    "images": ["/introduce/image1-1.png"],
-    "year" : "2021",
-    "buildingArea" : "919.41",
-    "totalFloorArea": "4257.73",
-    "siteArea" : "1895.40",
-    "buildingScale" : "지하 2층 / 지상 4층",
-    "buildingStructure" : "철골콘크리트구조",
-    "mainFinishes" : "점토벽톨"
-  },{
+    "images": ["/introduce/아름다운우리교회/아름다운우리교회1.jpeg","/introduce/아름다운우리교회/아름다운우리교회2.jpeg","/introduce/아름다운우리교회/아름다운우리교회3.jpeg","/introduce/아름다운우리교회/아름다운우리교회4.jpeg","/introduce/아름다운우리교회/아름다운우리교회5.jpeg","/introduce/아름다운우리교회/아름다운우리교회6.jpeg","/introduce/아름다운우리교회/아름다운우리교회7.jpeg"],
+    "buildingArea" : "932.37",
+    "totalFloorArea": "2,343.03",
+    "siteArea" : "2,443",
+    "buildingScale" : "예배동 지상 3층 / 사무동 지상 4층",
+    "buildingStructure" : "철골구조",
+    "mainFinishes" : "징크판넬"
+  },
+  {
     "id" : "3",
-    "name": "거룩한빛운정교회",
+    "name": "권창빌딩",
+    "category" : "2",
+    "images": ["/introduce/권창빌딩/권창빌딩1.png","/introduce/권창빌딩/권창빌딩2.png"],
+    "buildingArea" : "329.82",
+    "totalFloorArea": "1,971.96",
+    "siteArea" : "566",
+    "buildingScale" : "지하 1층 / 지상 5층",
+    "buildingStructure" : "철근콘트리트",
+    "mainFinishes" : "커튼월 / 대리석"
+  },
+  {
+    "id" : "4",
+    "name": "봉서4리마을회관",
     "category" : "1",
-    "images": ["/introduce/image1-1.png"],
-    "year" : "2021",
-    "buildingArea" : "919.41",
-    "totalFloorArea": "4257.73",
-    "siteArea" : "1895.40",
-    "buildingScale" : "지하 2층 / 지상 4층",
-    "buildingStructure" : "철골콘크리트구조",
-    "mainFinishes" : "점토벽톨"
+    "images": ["/introduce/봉서4리마을회관/봉서4리마을회관1.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관2.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관3.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관4.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관5.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관6.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관7.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관8.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관9.jpeg","/introduce/봉서4리마을회관/봉서4리마을회관10.jpeg"],
+    "buildingArea" : "329.82",
+    "totalFloorArea": "1,971.96",
+    "siteArea" : "566",
+    "buildingScale" : "지하 1층 / 지상 5층",
+    "buildingStructure" : "철근콘트리트",
+    "mainFinishes" : "커튼월 / 대리석"
   }
+  
 ]
