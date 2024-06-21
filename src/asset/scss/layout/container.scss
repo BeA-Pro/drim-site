@@ -14,7 +14,7 @@
 @include mobile{
   .container {
     padding-top: $mobile-header-size;
-    min-height: calc(100vh - #{$mobile-header-size} - #{$footer-size});
+    min-height: calc(90vh - #{$mobile-header-size});
     background-color: $container-color;
   }
 }

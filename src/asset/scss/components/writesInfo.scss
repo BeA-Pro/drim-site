@@ -11,12 +11,10 @@
     align-items: center;
 
     z-index : 3;
-    background-color: #999;
     
     .writeInfo-first,
     .writeInfo-second,
     .writeInfo-third{
-      background-color: #999;
       &.wrap{
         width: 100%;
         opacity: 0;
