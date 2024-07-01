@@ -11,7 +11,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow : hidden;
+      // overflow : hidden;
       .half-picture{
         height: 100%;
         width: 100%;
@@ -20,7 +20,7 @@
     }
     
     .half-writes{
-      display: block;
+
       background-color: black;
       box-sizing: border-box;
       padding:50px;
@@ -31,20 +31,25 @@
         font-size: 30px;
         font-weight: bold;
         color: white;
-        margin:50px 0 20px 0;
+        margin:50px 0 50px 0;
       }
   
       .half-writes-detail{
-        width: 80%;
+        width: 83%;
         color: white;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+        line-height: 200%;
+        font-size : 17px;
       }
   
       .half-writes-button{
+        width: 100px;
+        height: 25px;
         padding:10px;
         border-radius: 10px;
         border : 0.75px solid white;
         color: white;
+        text-align: center;
       }
   
       .half-writes-button:hover{
@@ -62,15 +67,20 @@
     width: 100%;
   
     .image-container{
-      height: 70%;
+      height: 60%;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
       .half-picture{
-        width: auto; height: auto;
-        max-width: 1024px;
-        object-fit: contain;
+        // width: auto; height: auto;
+        // max-width: 1024px;
+        // object-fit: contain;
+        // object-fit: none;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
     
@@ -83,7 +93,7 @@
       box-sizing: border-box;
       padding: 10px;
       width: 100%;
-      height: 30%;
+      height: 40%;
   
       .half-writes-title{
         width: 80%;
@@ -97,15 +107,19 @@
         font-size:12px;
         color: white;
         margin-top: 15px;
+        line-height: 150%;
       }
   
       .half-writes-button{
+        width: 70px;
+        height: 20px;
         padding:10px;
         border-radius: 10px;
         border : 0.75px solid white;
         font-size:12px;
         color: white;
         margin-top: 15px;
+        text-align: center;
       }
   
       .half-writes-button:hover{

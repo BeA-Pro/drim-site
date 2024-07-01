@@ -1,3 +1,8 @@
+// section 3
+export const section3title = "Build Your Dream With Drim";
+export const section3Content = `우리는 건물을 지어내는 일에 그치지 않고, 따뜻하고 친근한 공간을 창조하고자 합니다.
+건축주의 꿈을 현실로 이끌어가는 여정에서, 우리는 단순한 건설회사가 아닌, 참여적이고 의미 있는 건축 파트너로서 프로젝트를 성공적으로 이끌어 나갈 것입니다.`;
+
 
 // section 4
 export const environment = "환경 (Environment)";
