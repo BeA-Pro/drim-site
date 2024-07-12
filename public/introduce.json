@@ -8,7 +8,7 @@
     "totalFloorArea": "729.79",
     "siteArea" : "6,330.00",
     "buildingScale" : "지상 2층",
-    "buildingStructure" : "철근콘크리트조 / 철골구",
+    "buildingStructure" : "철근콘크리트조 / 철골구조",
     "mainFinishes" : "점토벽돌 / 징크판넬"
   },
   {
@@ -44,7 +44,7 @@
     "totalFloorArea": "1,971.96",
     "siteArea" : "566",
     "buildingScale" : "지하 1층 / 지상 5층",
-    "buildingStructure" : "철근콘트리트",
+    "buildingStructure" : "철근콘트리트조",
     "mainFinishes" : "커튼월 / 대리석"
   },
   {
@@ -56,8 +56,19 @@
     "totalFloorArea": "1,971.96",
     "siteArea" : "566",
     "buildingScale" : "지하 1층 / 지상 5층",
-    "buildingStructure" : "철근콘트리트",
+    "buildingStructure" : "철근콘트리트조",
     "mainFinishes" : "커튼월 / 대리석"
+  },{
+    "id" : "5",
+    "name": "00부대 취사식당",
+    "category" : "1",
+    "images": ["/introduce/00부대 취사식당/00부대 취사식당1.png","/introduce/00부대 취사식당/00부대 취사식당2.jpeg","/introduce/00부대 취사식당/00부대 취사식당3.jpeg","/introduce/00부대 취사식당/00부대 취사식당4.jpeg","/introduce/00부대 취사식당/00부대 취사식당5.jpeg","/introduce/00부대 취사식당/00부대 취사식당6.jpeg","/introduce/00부대 취사식당/00부대 취사식당7.jpeg","/introduce/00부대 취사식당/00부대 취사식당8.jpeg"],
+    "buildingArea" : "450.00",
+    "totalFloorArea": "900.00",
+    "siteArea" : "805.00",
+    "buildingScale" : "지하 1층 / 지상 2층",
+    "buildingStructure" : "철근콘크리트조",
+    "mainFinishes" : "AL복합판넬 / 징크판넬"
   }
   
 ]
