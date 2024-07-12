@@ -4,29 +4,40 @@ export default function History() {
   return (
     <div className='history-wrapper'>
       <div className='history-title'>연혁</div>
-      <div className="history-writes">1994년 건축설계 전문회사로 출발하여 국내 최고의 전문가들과 지속적인 성장을 거듭하고 있습니다.</div>
+      <div className="history-writes">2003년 시작한 드림종합건설은 지금까지 꾸준히 성장하고 있습니다.</div>
       <div className="history-container">
         <div className="row">
           <div className="col-md-12">
             <div className="card">
-              <div className="card-body">
+              <div className="card-body" style={{ width: 600 }}>
                 <div id="content">
                   <ul className="timeline">
+                    <li className="event" data-date="2003">
+                      <h3>드림건설 건축업 개인사업자</h3>
+
+                    </li>
+                    <li className="event" data-date="2005">
+                      <h3>(주)하이다 코리아 인수</h3>
+                      <h3>주식회사 포럼종합건설 공동 대표이사 취임</h3>
+                    </li>
+                    <li className="event" data-date="2009">
+                      <h3>주식회사 드림예건으로 사명변경</h3>
+                      <h3>실내건축업 면허추가</h3>
+                      <h3>서울시 서초구 양재동 2203번지 동방빌딩 5층으로 사무실 이전</h3>
+                    </li>
+                    <li className="event" data-date="2011">
+                      <h3>주식회사 피엔엘로 사명변경</h3>
+                      <h3>시설물 유지관리업 면허 추가</h3>
+                    </li>
+                    <li className="event" data-date="2016">
+                      <h3>주식회사 드림종합건설 설립</h3>
+                      <h3>건설업 면허 추가</h3>
+                    </li>
+                    <li className="event" data-date="2018">
+                      <h3>파주시 가람로 116번지 57 2층으로 사무실 이전</h3>
+                    </li>
                     <li className="event" data-date="2020">
-                      <h3>Registration</h3>
-                      <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
-                    </li>
-                    <li className="event" data-date="2021">
-                      <h3>Opening Ceremony</h3>
-                      <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
-                    </li>
-                    <li className="event" data-date="2022">
-                      <h3>Main Event</h3>
-                      <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p>
-                    </li>
-                    <li className="event" data-date="2023">
-                      <h3>Closing Ceremony</h3>
-                      <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p>
+                      <h3>파주시 금바위로 42 10층으로 사무실 구입 이전</h3>
                     </li>
                   </ul>
                 </div>
