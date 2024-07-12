@@ -9,7 +9,7 @@ export default function History() {
         <div className="row">
           <div className="col-md-12">
             <div className="card">
-              <div className="card-body" style={{ width: 600 }}>
+              <div className="card-body">
                 <div id="content">
                   <ul className="timeline">
                     <li className="event" data-date="2003">
@@ -17,20 +17,20 @@ export default function History() {
 
                     </li>
                     <li className="event" data-date="2005">
-                      <h3>(주)하이다 코리아 인수</h3>
+                      <h3 style={{ marginBottom: "15px" }}>(주)하이다 코리아 인수</h3>
                       <h3>주식회사 포럼종합건설 공동 대표이사 취임</h3>
                     </li>
                     <li className="event" data-date="2009">
-                      <h3>주식회사 드림예건으로 사명변경</h3>
-                      <h3>실내건축업 면허추가</h3>
+                      <h3 style={{ marginBottom: "15px" }}>주식회사 드림예건으로 사명변경</h3>
+                      <h3 style={{ marginBottom: "15px" }}>실내건축업 면허추가</h3>
                       <h3>서울시 서초구 양재동 2203번지 동방빌딩 5층으로 사무실 이전</h3>
                     </li>
                     <li className="event" data-date="2011">
-                      <h3>주식회사 피엔엘로 사명변경</h3>
+                      <h3 style={{ marginBottom: "15px" }}>주식회사 피엔엘로 사명변경</h3>
                       <h3>시설물 유지관리업 면허 추가</h3>
                     </li>
                     <li className="event" data-date="2016">
-                      <h3>주식회사 드림종합건설 설립</h3>
+                      <h3 style={{ marginBottom: "15px" }}>주식회사 드림종합건설 설립</h3>
                       <h3>건설업 면허 추가</h3>
                     </li>
                     <li className="event" data-date="2018">

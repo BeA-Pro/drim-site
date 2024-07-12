@@ -22,6 +22,9 @@
         text-align: center;
 
       }
+      .card-body{
+        width: 800px;
+      }
 }
 
 @include mobile{
@@ -45,7 +48,12 @@
         width: 80%;
         text-align: center;
       }
+
+      .card-body{
+        width: 400px;
+      }
 }
+
 
 
     .timeline {
