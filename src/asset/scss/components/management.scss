@@ -49,7 +49,11 @@
             .management-details-value{
               width: 30%;
               height: 200px;
-              background-color: rgb(166, 164, 164);
+              
+              border-radius: 20px;
+              border: 1px solid black;
+              box-shadow: 0 1px 7px #555;
+              
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -110,6 +114,7 @@
               width: 100%;
               align-items: center;
               text-align:center;
+              
               .management-icon{
                 width: 30px;
                 height: 30px;

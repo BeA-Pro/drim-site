@@ -35,6 +35,6 @@ export const greeting4 = '(주) 드림종합건설 대표이사 박용우'
 
 //경영이념
 export const management1 = '모두에게 좋은 공간을 제공하는 것';
-export const management2 = 'technology';
-export const management3 = 'design';
-export const management4 = 'quality';
+export const management2 = 'Technology';
+export const management3 = 'Design';
+export const management4 = 'Quality';
