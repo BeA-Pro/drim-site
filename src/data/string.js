@@ -1,3 +1,8 @@
+// section 2
+export const section2title = "About Drim";
+export const section2Content = "드림은 건축의 완벽함을 추구하며 꾸준히 성장합니다.";
+
+
 // section 3
 export const section3title = "Build Your Dream With Drim";
 export const section3Content = `우리는 건물을 지어내는 일에 그치지 않고, 따뜻하고 친근한 공간을 창조하고자 합니다.

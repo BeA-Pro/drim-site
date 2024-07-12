@@ -1,8 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import MoneyIcon from '@mui/icons-material/Money';
-import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-import HomeWorkIcon from '@mui/icons-material/HomeWork';
+import History from "../asset/images/history.png";
+import Project from "../asset/images/project.png";
+import Area from "../asset/images/area.png";
+
+
+import HistoryBlack from "../asset/images/history_black.png";
+import ProjectBlack from "../asset/images/project_black.png";
+import AreaBlack from "../asset/images/area_black.png";
 
 
 
@@ -36,7 +41,7 @@ function SiteActivityComponent(props) {
   useEffect(() => {
     if (isVisible) {
       const start = performance.now(); // 현재 시간을 기록
-      const duration = 3000; // 애니메이션 지속 시간 (1.5초)
+      const duration = 1000; // 애니메이션 지속 시간 (1.5초)
 
       const updateCount = (timestamp) => { // timestamp : requestAnimationFrame 시작시간
         const elapsed = timestamp - start;
@@ -72,9 +77,10 @@ function SiteActivityComponent(props) {
           {props.id === "totalTurnover" && <div className="main-info-unit-writes">Write some words</div>}
           {props.id === "career" && <div className="main-info-unit-writes">Write some words</div>}
         </div>
-        {props.id === "projects" && <HomeWorkIcon sx={{ fontSize: 70, color: "white" }} />}
-        {props.id === "totalTurnover" && <MoneyIcon sx={{ fontSize: 70, color: "white" }} />}
-        {props.id === "career" && <WorkHistoryIcon sx={{ fontSize: 70, color: "white" }} />}
+        {/*props.id === "projects" && <HomeWorkIcon sx={{ fontSize: 70, color: "white" }} />*/}
+        {props.id === "projects" && <img src={Project} alt="history" style={{ width: 70, height: 70 }} />}
+        {props.id === "totalTurnover" && <img src={Area} alt="history" style={{ width: 70, height: 70 }} />}
+        {props.id === "career" && <img src={History} alt="history" style={{ width: 70, height: 70 }} />}
 
       </div>
     </div>
@@ -110,7 +116,7 @@ function MobileSiteActivityComponent(props) {
   useEffect(() => {
     if (isVisible) {
       const start = performance.now(); // 현재 시간을 기록
-      const duration = 3000; // 애니메이션 지속 시간 (1.5초)
+      const duration = 1000; // 애니메이션 지속 시간 (1.5초)
 
       const updateCount = (timestamp) => { // timestamp : requestAnimationFrame 시작시간
         const elapsed = timestamp - start;
@@ -145,9 +151,10 @@ function MobileSiteActivityComponent(props) {
           {props.id === "totalTurnover" && <div className="main-info-unit-writes">Write some words</div>}
           {props.id === "career" && <div className="main-info-unit-writes">Write some words</div>}
         </div>
-        {props.id === "projects" && <HomeWorkIcon sx={{ fontSize: 50 }} />}
-        {props.id === "totalTurnover" && <MoneyIcon sx={{ fontSize: 50 }} />}
-        {props.id === "career" && <WorkHistoryIcon sx={{ fontSize: 50 }} />}
+        {props.id === "projects" && <img src={ProjectBlack} alt="history" style={{ width: 40, height: 40, color: 'black' }} />}
+        {props.id === "totalTurnover" && <img src={AreaBlack} alt="history" style={{ width: 40, height: 40 }} />}
+        {props.id === "career" && <img src={HistoryBlack} alt="history" style={{ width: 40, height: 40 }} />}
+
 
       </div>
     </div>

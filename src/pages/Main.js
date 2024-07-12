@@ -1,5 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 
+import { section2title, section2Content } from '../data/string'
+
 // component
 import { Slide, MobileSlide } from "../components/Slide";
 import { SiteActivityComponent, MobileSiteActivityComponent } from "../components/SiteActivityComponent";
@@ -67,8 +69,8 @@ function Main() {
       <Slide ref={el => elements.current[0] = el} />
       <section className="second-section" ref={el => elements.current[1] = el}>
         <div className="second-section-wrap">
-          <div className="second-section-title">About us</div>
-          <div className="second-section-writes">Helping our customers create a better world</div>
+          <div className="second-section-title">{section2title}</div>
+          <div className="second-section-writes">{section2Content}</div>
           <div className="siteActivityComponent-wrap">
             <SiteActivityComponent id="projects" count={12} />
             <SiteActivityComponent id="totalTurnover" count={23} />
@@ -92,7 +94,7 @@ function MobileMain() {
       <MobileSlide />
       <section className="second-section">
         <div className="second-section-wrap">
-          <div className="second-section-title">About us</div>
+          <div className="second-section-title">{section2title}</div>
           <div className="siteActivityComponent-wrap">
             <MobileSiteActivityComponent id="projects" count={12} />
             <MobileSiteActivityComponent id="totalTurnover" count={23} />
