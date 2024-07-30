@@ -68,14 +68,34 @@ function SiteActivityComponent(props) {
     <div className="siteActivityComponent" ref={elementRef} >
       <div className="siteActivityComponent-inner">
         <div className="siteActivityComponent-info">
-          <div className="main-info">{count}</div>
-          {props.id === "projects" && <div className="main-info-unit">Projects</div>}
-          {props.id === "totalTurnover" && <div className="main-info-unit">Total Turnover</div>}
-          {props.id === "career" && <div className="main-info-unit">Career</div>}
+          {props.id === "projects" &&
+            <>
+              <div className="main-info">{count}</div>
+              <div className="main-info-unit">Projects</div>
+            </>
+          }
+          {props.id === "totalTurnover" &&
+            <>
+              <div className="main-info">
+                {count}
+                {/*<span className="main-info-count-unit">
+                  m
+                  <sup>2</sup>
+                </span>*/}
+              </div>
+              <div className="main-info-unit">Built-up Area</div>
+            </>
+          }
+          {props.id === "career" &&
+            <>
+              <div className="main-info">{count}</div>
+              <div className="main-info-unit">Career</div>
+            </>
+          }
 
-          {props.id === "projects" && <div className="main-info-unit-writes">Write some words</div>}
-          {props.id === "totalTurnover" && <div className="main-info-unit-writes">Write some words</div>}
-          {props.id === "career" && <div className="main-info-unit-writes">Write some words</div>}
+          {props.id === "projects" && <div className="main-info-unit-writes">In total</div>}
+          {props.id === "totalTurnover" && <div className="main-info-unit-writes">In units : 1,000m<sup>2</sup></div>}
+          {props.id === "career" && <div className="main-info-unit-writes">Since 2003</div>}
         </div>
         {/*props.id === "projects" && <HomeWorkIcon sx={{ fontSize: 70, color: "white" }} />*/}
         {props.id === "projects" && <img src={Project} alt="history" style={{ width: 70, height: 70 }} />}
@@ -142,14 +162,28 @@ function MobileSiteActivityComponent(props) {
     <div className="siteActivityComponent" ref={elementRef}>
       <div className="siteActivityComponent-inner">
         <div className="siteActivityComponent-info">
-          <div className="main-info">{count}</div>
-          {props.id === "projects" && <div className="main-info-unit">Projects</div>}
-          {props.id === "totalTurnover" && <div className="main-info-unit">Total Turnover</div>}
-          {props.id === "career" && <div className="main-info-unit">Career</div>}
+          {props.id === "projects" &&
+            <>
+              <div className="main-info">{count}</div>
+              <div className="main-info-unit">Projects</div>
+            </>
+          }
+          {props.id === "totalTurnover" &&
+            <>
+              <div className="main-info">{count}</div>
+              <div className="main-info-unit">Built-up Area</div>
+            </>
+          }
+          {props.id === "career" &&
+            <>
+              <div className="main-info">{count}</div>
+              <div className="main-info-unit">Career</div>
+            </>
+          }
 
-          {props.id === "projects" && <div className="main-info-unit-writes">Write some words</div>}
-          {props.id === "totalTurnover" && <div className="main-info-unit-writes">Write some words</div>}
-          {props.id === "career" && <div className="main-info-unit-writes">Write some words</div>}
+          {props.id === "projects" && <div className="main-info-unit-writes">In total</div>}
+          {props.id === "totalTurnover" && <div className="main-info-unit-writes">In units : 1,000m<sup>2</sup></div>}
+          {props.id === "career" && <div className="main-info-unit-writes">Since 2003</div>}
         </div>
         {props.id === "projects" && <img src={ProjectBlack} alt="history" style={{ width: 40, height: 40, color: 'black' }} />}
         {props.id === "totalTurnover" && <img src={AreaBlack} alt="history" style={{ width: 40, height: 40 }} />}

@@ -72,9 +72,9 @@ function Main() {
           <div className="second-section-title">{section2title}</div>
           <div className="second-section-writes">{section2Content}</div>
           <div className="siteActivityComponent-wrap">
-            <SiteActivityComponent id="projects" count={12} />
-            <SiteActivityComponent id="totalTurnover" count={23} />
-            <SiteActivityComponent id="career" count={34} />
+            <SiteActivityComponent id="projects" count={42} />
+            <SiteActivityComponent id="totalTurnover" count={120} />
+            <SiteActivityComponent id="career" count={22} />
           </div>
         </div>
       </section>
@@ -96,9 +96,9 @@ function MobileMain() {
         <div className="second-section-wrap">
           <div className="second-section-title">{section2title}</div>
           <div className="siteActivityComponent-wrap">
-            <MobileSiteActivityComponent id="projects" count={12} />
-            <MobileSiteActivityComponent id="totalTurnover" count={23} />
-            <MobileSiteActivityComponent id="career" count={34} />
+            <MobileSiteActivityComponent id="projects" count={42} />
+            <MobileSiteActivityComponent id="totalTurnover" count={120} />
+            <MobileSiteActivityComponent id="career" count={22} />
           </div>
         </div>
       </section>
