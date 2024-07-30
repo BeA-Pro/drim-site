@@ -38,3 +38,7 @@ export const management1 = '모두에게 좋은 공간을 제공하는 것';
 export const management2 = 'Technology';
 export const management3 = 'Design';
 export const management4 = 'Quality';
+
+// Footer
+export const footer1 = '10894 경기 파주시 금바위로 42 (운정법조타운) ㅣ 사업자등록번호 335-81-00531 ㅣ T. 031-957-9077';
+export const footer2 = '© DRIM CONSTRUCTION Co.,Ltd. ALL RIGHTS RESERVED';
