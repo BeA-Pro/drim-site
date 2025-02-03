@@ -127,7 +127,7 @@
     "name": "00부대 훈련장",
     "category": "1",
     "images": [
-      "/introduce/00부대 훈련장/00부대 훈련장0.JPG",
+      "/introduce/00부대 훈련장/00부대 훈련장0.png",
       "/introduce/00부대 훈련장/00부대 훈련장1.jpg",
       "/introduce/00부대 훈련장/00부대 훈련장2.jpg",
       "/introduce/00부대 훈련장/00부대 훈련장3.jpg",
@@ -136,7 +136,8 @@
       "/introduce/00부대 훈련장/00부대 훈련장6.png",
       "/introduce/00부대 훈련장/00부대 훈련장7.jpeg",
       "/introduce/00부대 훈련장/00부대 훈련장8.JPG",
-      "/introduce/00부대 훈련장/00부대 훈련장10.JPG"
+      "/introduce/00부대 훈련장/00부대 훈련장10.JPG",
+      "/introduce/00부대 훈련장/00부대 훈련장11.JPG"
     ],
     "buildingArea": "263.04",
     "totalFloorArea": "260.82",
@@ -164,6 +165,244 @@
     "totalFloorArea": "-",
     "siteArea": "-",
     "buildingScale": "지상 3층",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "8",
+    "name": "광성교회 교육관 신축공사",
+    "category": "1",
+    "images": [
+      "/introduce/광성교회 교육관 신축공사/광성교회 교육관 신축공사1.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "9",
+    "name": "광성교회 선교관 신축공사",
+    "category": "1",
+    "images": [
+      "/introduce/광성교회 선교관 신축공사/광성교회 선교관 신축공사1.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "10",
+    "name": "광성드림학교 증축공사",
+    "category": "1",
+    "images": ["/introduce/광성드림학교 증축공사/광성드림학교 증축공사.png"],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "11",
+    "name": "대구 노마즈빌딩 신축공사",
+    "category": "1",
+    "images": [
+      "/introduce/대구 노마즈빌딩 신축공사/대구 노마즈빌딩 신축공사1.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "12",
+    "name": "동패동 근린생활시설 신축공사",
+    "category": "1",
+    "images": [
+      "/introduce/동패동 근린생활시설 신축공사/동패동 근린생활시설 신축공사1.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "13",
+    "name": "선제 식품공장 신축공사",
+    "category": "1",
+    "images": [
+      "/introduce/선제 식품공장 신축공사/선제 식품공장 신축공사1.png",
+      "/introduce/선제 식품공장 신축공사/선제 식품공장 신축공사2.jpg"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "14",
+    "name": "압구정 근린생활시설 신축공사-1",
+    "category": "1",
+    "images": [
+      "/introduce/압구정 근린생활시설 신축공사-1/압구정 근린생활시설 신축공사-1.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "15",
+    "name": "압구정 근린생활시설 신축공사-2",
+    "category": "1",
+    "images": [
+      "/introduce/압구정 근린생활시설 신축공사-2/압구정 근린생활시설 신축공사-2.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "16",
+    "name": "압구정 근린생활시설 신축공사-3",
+    "category": "1",
+    "images": [
+      "/introduce/압구정 근린생활시설 신축공사-3/압구정 근린생활시설 신축공사-3.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "17",
+    "name": "운정역 근린생활시설 리모델링 공사",
+    "category": "2",
+    "images": [
+      "/introduce/운정역 근린생활시설 리모델링 공사/운정역 근린생활시설 리모델링 공사1.png",
+      "/introduce/운정역 근린생활시설 리모델링 공사/운정역 근린생활시설 리모델링 공사2.jpg"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "19",
+    "name": "주엽역 효림빌딩 신축공사",
+    "category": "1",
+    "images": [
+      "/introduce/주엽역 효림빌딩 신축공사/주엽역 효림빌딩 신축공사.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "20",
+    "name": "주엽역 효원빌딩 신축공사",
+    "category": "1",
+    "images": [
+      "/introduce/주엽역 효원빌딩 신축공사/주엽역 효원빌딩 신축공사.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "21",
+    "name": "판교 상가주택 신축공사-1",
+    "category": "1",
+    "images": [
+      "/introduce/판교 상가주택 신축공사-1/판교 상가주택 신축공사-1.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "22",
+    "name": "판교 상가주택 신축공사-2",
+    "category": "1",
+    "images": [
+      "/introduce/판교 상가주택 신축공사-2/판교 상가주택 신축공사-2.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "23",
+    "name": "판교 상가주택 신축공사-3",
+    "category": "1",
+    "images": [
+      "/introduce/판교 상가주택 신축공사-3/판교 상가주택 신축공사-3.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "24",
+    "name": "판교 상가주택 신축공사-4",
+    "category": "1",
+    "images": [
+      "/introduce/판교 상가주택 신축공사-4/판교 상가주택 신축공사-4.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
+    "buildingStructure": "-",
+    "mainFinishes": "-"
+  },
+  {
+    "id": "25",
+    "name": "헤이리 상가주택 신축공사",
+    "category": "1",
+    "images": [
+      "/introduce/헤이리 상가주택 신축공사/헤이리 상가주택 신축공사.png"
+    ],
+    "buildingArea": "-",
+    "totalFloorArea": "-",
+    "siteArea": "-",
+    "buildingScale": "-",
     "buildingStructure": "-",
     "mainFinishes": "-"
   }
